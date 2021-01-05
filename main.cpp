@@ -6,6 +6,8 @@
 #include <QQmlEngine>
 #include <QStandardPaths>
 
+#include <QObject>
+
 #if defined(Q_OS_ANDROID)
 #include <QtAndroid>
 
@@ -55,9 +57,13 @@ int main(int argc, char *argv[])
         }
     }
     QString newHtmlFile = tmploc + "/placemark.html";
-    if (QFile(newHtmlFile).exists()) {
-        if (!QFile(newHtmlFile).remove()) {
-            qCritical() << QObject::tr("Can't remove the exists \"placemark.html\" file, abort.");
+    QFile htmlFile(newHtmlFile);
+#ifndef Q_OS_ANDROID
+    htmlFile.setPermissions(QFileDevice::Permission::ReadOther | QFileDevice::Permission::WriteOther);
+#endif
+    if (htmlFile.exists()) {
+        if (!htmlFile.remove()) {
+            qCritical() << QObject::tr("Can't remove the exists \"placemark.html\" file, error: \"%1\".").arg(htmlFile.errorString());
             return 1;
         }
     }
@@ -65,10 +71,15 @@ int main(int argc, char *argv[])
         qCritical() << QObject::tr("Can't copy \"placemark.html\", abort.");
         return 1;
     }
+
     QString newJsFile = tmploc + "/placemark.js";
-    if (QFile(newJsFile).exists()) {
-        if (!QFile(newJsFile).remove()) {
-            qCritical() << QObject::tr("Can't remove the exists \"placemark.js\" file, abort.");
+    QFile jsFile(newJsFile);
+#ifndef Q_OS_ANDROID
+    jsFile.setPermissions(QFileDevice::Permission::ReadOther | QFileDevice::Permission::WriteOther);
+#endif
+    if (jsFile.exists()) {
+        if (!jsFile.remove()) {
+            qCritical() << QObject::tr("Can't remove the exists \"placemark.js\" file, error: \"%1\".").arg(jsFile.errorString());
             return 1;
         }
     }
