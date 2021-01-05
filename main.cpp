@@ -1,5 +1,5 @@
+#include <QDebug>
 #include <QDir>
-#include <QDirIterator>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
@@ -8,7 +8,13 @@
 
 #if defined(Q_OS_ANDROID)
 #include <QtAndroid>
+
+static const QString PERMISSION_WRITE = "android.permission.WRITE_EXTERNAL_STORAGE";
+static const QString PERMISSION_READ = "android.permission.READ_EXTERNAL_STORAGE";
+
 #endif
+
+static const QString SUBFOLDER = "/stack/html/";
 
 int main(int argc, char *argv[])
 {
@@ -28,39 +34,49 @@ int main(int argc, char *argv[])
     engine.load(url);
 
 #if defined(Q_OS_ANDROID)
-    QtAndroid::PermissionResultMap resultHash = QtAndroid::requestPermissionsSync({"android.permission.WRITE_EXTERNAL_STORAGE",
-                                                                                   "android.permission.READ_EXTERNAL_STORAGE"});
-    if (resultHash["android.permission.WRITE_EXTERNAL_STORAGE"] == QtAndroid::PermissionResult::Denied) {
-        return 0;
+    QtAndroid::PermissionResultMap resultHash = QtAndroid::requestPermissionsSync({PERMISSION_WRITE,
+                                                                                   PERMISSION_READ});
+    if (resultHash[PERMISSION_WRITE] == QtAndroid::PermissionResult::Denied) {
+        qCritical() << QObject::tr("The write permission is required, abort.");
+        return 1;
     }
-    if (resultHash["android.permission.READ_EXTERNAL_STORAGE"] == QtAndroid::PermissionResult::Denied) {
-        return 0;
+    if (resultHash[PERMISSION_READ] == QtAndroid::PermissionResult::Denied) {
+        qCritical() << QObject::tr("The read permission is required, abort.");
+        return 1;
     }
 #endif
 
-    QString tmploc = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/stack/html/";
+    QString tmploc = QStandardPaths::writableLocation(QStandardPaths::TempLocation) + SUBFOLDER;
     tmploc = QDir(tmploc).absolutePath();
-    QString newHtmlFile = tmploc + "/placemark.html";
     if (!QDir(tmploc).exists()) {
         if (!QDir(tmploc).mkpath(".")) {
-            newHtmlFile = "https://yandex.ru/";
+            qCritical() << QObject::tr("Can't create temporary folder, abort.");
+            return 1;
         }
-    } else {
-
-        //newHtmlFile = "https://google.com/";
     }
-    QString newJsFile = tmploc + "/placemark.js";
-    if (!QFile(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)).exists()) {
-        //newHtmlFile = "https://google.com/";
+    QString newHtmlFile = tmploc + "/placemark.html";
+    if (QFile(newHtmlFile).exists()) {
+        if (!QFile(newHtmlFile).remove()) {
+            qCritical() << QObject::tr("Can't remove the exists \"placemark.html\" file, abort.");
+            return 1;
+        }
     }
     if (!QFile::copy(":/html/placemark.html", newHtmlFile)) {
-        //newHtmlFile = "https://google.com/";
+        qCritical() << QObject::tr("Can't copy \"placemark.html\", abort.");
+        return 1;
     }
-    QFile::copy(":/html/placemark.js", newJsFile);
+    QString newJsFile = tmploc + "/placemark.js";
+    if (QFile(newJsFile).exists()) {
+        if (!QFile(newJsFile).remove()) {
+            qCritical() << QObject::tr("Can't remove the exists \"placemark.js\" file, abort.");
+            return 1;
+        }
+    }
+    if (!QFile::copy(":/html/placemark.js", newJsFile)) {
+        qCritical() << QObject::tr("Can't copy \"placemark.js\", abort.");
+        return 1;
+    }
 
-    //newHtmlFile = newHtmlFile.replace("qrc", "file");
-
-    // if wanted, set the QML webview URL
     auto context = engine.rootContext();
     Q_ASSERT(context != nullptr);
 
