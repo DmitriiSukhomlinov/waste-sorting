@@ -6,8 +6,6 @@
 #include <QQmlEngine>
 #include <QStandardPaths>
 
-#include <QObject>
-
 #if defined(Q_OS_ANDROID)
 #include <QtAndroid>
 

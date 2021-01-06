@@ -2,10 +2,17 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>HomeForm.qml</file>
-        <file>Page1Form.qml</file>
+        <file>ChooseCathegoryPage.qml</file>
         <file>Page2Form.qml</file>
         <file>qtquickcontrols2.conf</file>
-		<file>html/placemark.html</file>
-		<file>html/placemark.js</file>
+		<file>custom/WSChooseCathegoryButton.qml</file>
+        <file>html/placemark.html</file>
+        <file>html/placemark.js</file>
+		<file>icons/Bulbs.png</file>
+		<file>icons/E-waste.png</file>
+		<file>icons/Glass.png</file>
+		<file>icons/Metal.png</file>
+		<file>icons/Paper.png</file>
+		<file>icons/Plastic.png</file>
     </qresource>
 </RCC>

@@ -11,7 +11,5 @@ Page {
     WebView {
         anchors.fill: parent
         url: placemarkUrl
-        //url: "file:///html/placemark.html"
-
     }
 }
