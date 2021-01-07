@@ -3,9 +3,10 @@
         <file>main.qml</file>
         <file>Map.qml</file>
         <file>ChooseCathegoryPage.qml</file>
-        <file>plastic/2hdpe.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>custom/WSPictureButton.qml</file>
+		<file>custom/WSTextButton.qml</file>
+		<file>custom/WSTextHeader.qml</file>
         <file>html/placemark.html</file>
         <file>html/placemark.js</file>
         <file>icons/bulbs-pressed.png</file>
@@ -18,7 +19,16 @@
         <file>icons/metal-released.png</file>
         <file>icons/paper-pressed.png</file>
         <file>icons/paper-released.png</file>
+        <file>icons/plastic-1.png</file>
+        <file>icons/plastic-2.png</file>
+        <file>icons/plastic-3.png</file>
+        <file>icons/plastic-4.png</file>
+        <file>icons/plastic-5.png</file>
+        <file>icons/plastic-6.png</file>
+        <file>icons/plastic-7.png</file>
         <file>icons/plastic-pressed.png</file>
         <file>icons/plastic-released.png</file>
+        <file>plastic/2hdpe.qml</file>
+		<file>plastic/PlasticMain.qml</file>
     </qresource>
 </RCC>

@@ -7,8 +7,7 @@ import "custom" as Custom
 Page {
     property StackView view
     id: page
-    width: 600
-    height: 400
+
 
     title: "Выбор категории"
 
@@ -21,14 +20,14 @@ Page {
             releasedImageSource: "../icons/paper-released.png"
             pressedImageSource: "../icons/paper-pressed.png"
             buttonText: "Бумага"
-            onClicked: function() {
-                //view.push("HomeForm.qml", {"view": view})
-            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic-released.png"
             pressedImageSource: "../icons/plastic-pressed.png"
             buttonText: "Пластик"
+            onClicked: function() {
+                view.push("plastic/PlasticMain.qml", {"view": view})
+            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/glass-released.png"
