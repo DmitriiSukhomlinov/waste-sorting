@@ -5,6 +5,7 @@ import QtQuick.Layouts 1.12
 Item {
     property string releasedImageSource: ""
     property string pressedImageSource: ""
+    property string buttonText: ""
 
     id: button
     width: 150
@@ -21,9 +22,14 @@ Item {
 
     Text {
         id: innerText
-        anchors.centerIn: parent
-        color: "white"
-        font.bold: true
+        x: 66
+        width: 18
+        height: 16
+        anchors.top: backgroundImage.bottom
+        anchors.topMargin: 6
+        verticalAlignment: Text.AlignVCenter
+        horizontalAlignment: Text.AlignHCenter
+        text: buttonText
     }
 
     //Mouse area to react on click events

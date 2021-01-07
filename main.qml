@@ -67,6 +67,8 @@ ApplicationWindow {
             id: chooseCathegory
             height: stackView.height
             width: stackView.width
+            view: stackView
+            //mainStack: stackView
         }
 
         anchors.fill: parent

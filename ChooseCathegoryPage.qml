@@ -5,45 +5,50 @@ import QtQuick.Layouts 1.12
 import "custom" as Custom
 
 Page {
+    property StackView view
     id: page
     width: 600
     height: 400
 
-    title: qsTr("Choose cathegory")
+    title: "Выбор категории"
 
     GridLayout {
         id: grid
-
-        //fillHeight: true
-        //fillWidth: true
-        //width: parent.width
-        //height: parent.height
         anchors.fill: parent
         columns: 2
 
-        Custom.WSChooseCathegoryButton {
-            releasedImageSource: "../icons/Paper.png"
-            pressedImageSource: ""
+        Custom.WSPictureButton {
+            releasedImageSource: "../icons/paper-released.png"
+            pressedImageSource: "../icons/paper-pressed.png"
+            buttonText: "Бумага"
+            onClicked: function() {
+                //view.push("HomeForm.qml", {"view": view})
+            }
         }
-        Custom.WSChooseCathegoryButton {
-            releasedImageSource: "../icons/Plastic.png"
-            pressedImageSource: ""
+        Custom.WSPictureButton {
+            releasedImageSource: "../icons/plastic-released.png"
+            pressedImageSource: "../icons/plastic-pressed.png"
+            buttonText: "Пластик"
         }
-        Custom.WSChooseCathegoryButton {
-            releasedImageSource: "../icons/Glass.png"
-            pressedImageSource: ""
+        Custom.WSPictureButton {
+            releasedImageSource: "../icons/glass-released.png"
+            pressedImageSource: "../icons/glass-pressed.png"
+            buttonText: "Стекло"
         }
-        Custom.WSChooseCathegoryButton {
-            releasedImageSource: "../icons/Metal.png"
-            pressedImageSource: ""
+        Custom.WSPictureButton {
+            releasedImageSource: "../icons/metal-released.png"
+            pressedImageSource: "../icons/metal-pressed.png"
+            buttonText: "Метал"
         }
-        Custom.WSChooseCathegoryButton {
-            releasedImageSource: "../icons/E-waste.png"
-            pressedImageSource: ""
+        Custom.WSPictureButton {
+            releasedImageSource: "../icons/e-waste-released.png"
+            pressedImageSource: "../icons/e-waste-pressed.png"
+            buttonText: "Электроника"
         }
-        Custom.WSChooseCathegoryButton {
-            releasedImageSource: "../icons/Bulbs.png"
-            pressedImageSource: ""
+        Custom.WSPictureButton {
+            releasedImageSource: "../icons/bulbs-released.png"
+            pressedImageSource: "../icons/bulbs-pressed.png"
+            buttonText: "Лампочки"
         }
 
     }

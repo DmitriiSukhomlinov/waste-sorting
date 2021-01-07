@@ -1,18 +1,24 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>HomeForm.qml</file>
+        <file>Map.qml</file>
         <file>ChooseCathegoryPage.qml</file>
-        <file>Page2Form.qml</file>
+        <file>plastic/2hdpe.qml</file>
         <file>qtquickcontrols2.conf</file>
-		<file>custom/WSChooseCathegoryButton.qml</file>
+        <file>custom/WSPictureButton.qml</file>
         <file>html/placemark.html</file>
         <file>html/placemark.js</file>
-		<file>icons/Bulbs.png</file>
-		<file>icons/E-waste.png</file>
-		<file>icons/Glass.png</file>
-		<file>icons/Metal.png</file>
-		<file>icons/Paper.png</file>
-		<file>icons/Plastic.png</file>
+        <file>icons/bulbs-pressed.png</file>
+        <file>icons/bulbs-released.png</file>
+        <file>icons/e-waste-pressed.png</file>
+        <file>icons/e-waste-released.png</file>
+        <file>icons/glass-pressed.png</file>
+        <file>icons/glass-released.png</file>
+        <file>icons/metal-pressed.png</file>
+        <file>icons/metal-released.png</file>
+        <file>icons/paper-pressed.png</file>
+        <file>icons/paper-released.png</file>
+        <file>icons/plastic-pressed.png</file>
+        <file>icons/plastic-released.png</file>
     </qresource>
 </RCC>

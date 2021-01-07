@@ -3,8 +3,10 @@ import QtQuick.Controls 2.5
 import QtWebView 1.1
 
 Page {
-    width: 600
-    height: 400
+    property StackView view
+
+    height: view.height
+    width: view.width
 
     title: qsTr("Home")
 
