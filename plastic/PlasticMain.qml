@@ -3,9 +3,12 @@ import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.12
 
 import "../custom" as Custom
+import ".."
 
 Page {
     property StackView view
+    property Map mapView
+
     property int picSize: 100
 
     height: view.height
@@ -35,7 +38,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("2hdpe.qml", {"view": view})
+                view.push("2hdpe.qml", {"view": view, "mapView": mapView})
             }
         }
         Custom.WSPictureButton {

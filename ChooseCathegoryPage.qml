@@ -6,6 +6,7 @@ import "custom" as Custom
 
 Page {
     property StackView view
+    property Map mapView
     id: page
 
 
@@ -26,7 +27,8 @@ Page {
             pressedImageSource: "../icons/plastic-pressed.png"
             buttonText: "Пластик"
             onClicked: function() {
-                view.push("plastic/PlasticMain.qml", {"view": view})
+                view.push("plastic/PlasticMain.qml", {"view": view, "mapView": mapView})
+                //view.push(mapView)
             }
         }
         Custom.WSPictureButton {

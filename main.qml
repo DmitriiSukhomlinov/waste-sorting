@@ -8,7 +8,7 @@ ApplicationWindow {
     width: 432
     height: 864
     visible: true
-    title: qsTr("Stack")
+    title: "Придумать название"
 
     header: ToolBar {
         //contentHeight: toolButton.implicitHeight
@@ -67,10 +67,15 @@ ApplicationWindow {
             height: stackView.height
             width: stackView.width
             view: stackView
+            mapView: mapView
             //mainStack: stackView
         }
 
-
+        Map {
+            id: mapView
+            view: stackView
+            pageUrl: placemarkUrl
+        }
 
 
         anchors.fill: parent

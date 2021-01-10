@@ -4,6 +4,7 @@ import QtWebView 1.1
 
 Page {
     property StackView view
+    property alias pageUrl: webView.url
 
     height: view.height
     width: view.width
@@ -11,7 +12,7 @@ Page {
     title: qsTr("Home")
 
     WebView {
+        id: webView
         anchors.fill: parent
-        url: placemarkUrl
     }
 }

@@ -26,14 +26,9 @@ int main(int argc, char *argv[])
     app.setApplicationName("Waste sorting");
 
     QQmlApplicationEngine engine;
-    const QUrl url(QStringLiteral("qrc:/main.qml"));
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app, [url](QObject *obj, const QUrl &objUrl) {
-        if (!obj && url == objUrl)
-            QCoreApplication::exit(-1);
-    }, Qt::QueuedConnection);
-    engine.load(url);
 
+
+    //Copy html and js files
 #if defined(Q_OS_ANDROID)
     QtAndroid::PermissionResultMap resultHash = QtAndroid::requestPermissionsSync({PERMISSION_WRITE,
                                                                                    PERMISSION_READ});
@@ -91,6 +86,14 @@ int main(int argc, char *argv[])
     Q_ASSERT(context != nullptr);
 
     context->setContextProperty("placemarkUrl", QUrl::fromUserInput(newHtmlFile));
+
+    const QUrl url(QStringLiteral("qrc:/main.qml"));
+    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
+                     &app, [url](QObject *obj, const QUrl &objUrl) {
+        if (!obj && url == objUrl)
+            QCoreApplication::exit(-1);
+    }, Qt::QueuedConnection);
+    engine.load(url);
 
     return app.exec();
 }

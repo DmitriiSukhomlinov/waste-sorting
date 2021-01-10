@@ -3,9 +3,12 @@ import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.12
 
 import "../custom" as Custom
+import "../"
 
 Page {
     property StackView view
+    property Map mapView
+
     property int leftMargin: 40
 
     height: view.height
@@ -14,8 +17,6 @@ Page {
     title: "2 HDPE/ПЭНД"
 
     ColumnLayout {
-        anchors.centerIn: parent.top
-
 
         Custom.WSTextHeader {
             Layout.topMargin: 30
@@ -28,7 +29,7 @@ Page {
             Layout.leftMargin: leftMargin
             text: "Бутылки от бытовой химии"
             onClicked: function() {
-                view.push("../Map.qml", {"view": view})
+                view.push(mapView)
             }
         }
 
