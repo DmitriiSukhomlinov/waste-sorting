@@ -1,0 +1,26 @@
+{
+	"PETE": {
+		"Color": "#00FF00",
+		"MapData": [{
+			"MapPoinName": "Название",
+			"MapPointDescription": "Ну тут типа сдаем мусор",
+			"MapPointCoordinates": "58.211748, 59.979321"
+		}, {
+			"MapPoinName": "Еще назнание",
+			"MapPointDescription": "Тут типа тоже",
+			"MapPointCoordinates": "51.221748, 53.929321"
+		}]
+	},
+	"HDPE": {
+		"Color": "#FF0000",
+		"MapData": [{
+			"MapPoinName": "И тут название",
+			"MapPointDescription": "Тут вообще много мусора",
+			"MapPointCoordinates": "58.211748, 59.979321"
+		}, {
+			"MapPoinName": "Последнее название",
+			"MapPointDescription": "И тут",
+			"MapPointCoordinates": "55.01, 82.55"
+		}]
+	}
+}

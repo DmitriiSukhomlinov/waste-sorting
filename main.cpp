@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
     auto context = engine.rootContext();
     Q_ASSERT(context != nullptr);
 
-    context->setContextProperty("placemarkUrl", QUrl::fromUserInput(newHtmlFile));
+    context->setContextProperty("htmlUrl", QUrl::fromUserInput(newHtmlFile));
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

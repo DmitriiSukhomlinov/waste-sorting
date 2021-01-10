@@ -4,12 +4,13 @@ import QtWebView 1.1
 
 Page {
     property StackView view
+    property alias web: webView
     property alias pageUrl: webView.url
 
     height: view.height
     width: view.width
 
-    title: qsTr("Home")
+    title: "Карта"
 
     WebView {
         id: webView

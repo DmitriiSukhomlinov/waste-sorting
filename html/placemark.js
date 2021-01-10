@@ -2,28 +2,26 @@ ymaps.ready(init);
 
 var map
 
-const typesAndColors = new Map([
-   ["PETE", "#00FF00"],
-   ["HDPE", "#FF0000"],
-   ["PVC", "#FFFF00"],
-   ["LDPE", "#FF00FF"]
-]);
-
 function init() {
   map = new ymaps.Map("map", {
     center: [55.76, 37.57],
     zoom: 5,
-    controls: ['zoomControl', 'searchControl']
+    controls: ['zoomControl']
   });
 
-  updatePoints("HDPE")
+  //updatePoints("HDPE")
 }
 
 function updatePoints(newPointsType) {
     $.getJSON('data.json', function(data) {
-      // Создадим объект точек из data.Points
-      var color = typesAndColors.get(newPointsType)
-      var myGeoObjects = data.Points.map(item => {
+      //Найдем в json файле раздел, соответствующий необходимому нам
+      var currentData
+      $.each( data, function( key, val ) {
+        if (key === newPointsType) {
+            currentData = val
+        }
+      });
+      var myGeoObjects = currentData.MapData.map(item => {
         return new ymaps.GeoObject({
           geometry: {
             type: "Point",
@@ -35,14 +33,14 @@ function updatePoints(newPointsType) {
             balloonContentBody: [
               '<address style="font-style: normal">',
               '<h3>Данные</h3>',
-              '<b>Данные: </b>' + item.MapPoinName + '<br>',
-              '<b>Данные: </b>ФИО Главы МО<br>',
+              '<b>Название: </b>' + item.MapPoinName + '<br>',
+              '<b>Описание: </b>' + item.MapPointDescription + '<br>',
               '</address>'
             ].join('')
           }
         }, {
           preset: "islands#darkGreenDotIcon",
-          iconColor: color
+          iconColor: currentData.Color
         });
       })
       // Создадим кластеризатор после получения и добавления точек
@@ -54,8 +52,8 @@ function updatePoints(newPointsType) {
       });
       clusterer.add(myGeoObjects);
       map.geoObjects.add(clusterer);
-      /*map.setBounds(clusterer.getBounds(), {
+      map.setBounds(clusterer.getBounds(), {
         checkZoomRange: true
-      });*/
+      });
     })
 }
