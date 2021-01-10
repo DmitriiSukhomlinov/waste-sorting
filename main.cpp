@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
     tmploc = QDir(tmploc).absolutePath();
     if (!QDir(tmploc).exists()) {
         if (!QDir(tmploc).mkpath(".")) {
-            qCritical() << QObject::tr("Can't create temporary folder, abort.");
+            qCritical() << QObject::tr("Невозможно создать временную папку, отмена.");
             return 1;
         }
     }
@@ -60,12 +60,12 @@ int main(int argc, char *argv[])
 #endif
     if (htmlFile.exists()) {
         if (!htmlFile.remove()) {
-            qCritical() << QObject::tr("Can't remove the exists \"placemark.html\" file, error: \"%1\".").arg(htmlFile.errorString());
+            qCritical() << QObject::tr("Невозможно удалить существующий \"placemark.html\", ошибка: \"%1\".").arg(htmlFile.errorString());
             return 1;
         }
     }
     if (!QFile::copy(":/html/placemark.html", newHtmlFile)) {
-        qCritical() << QObject::tr("Can't copy \"placemark.html\", abort.");
+        qCritical() << QObject::tr("Невозможно скопировать \"placemark.html\", отмена.");
         return 1;
     }
 
@@ -76,12 +76,12 @@ int main(int argc, char *argv[])
 #endif
     if (jsFile.exists()) {
         if (!jsFile.remove()) {
-            qCritical() << QObject::tr("Can't remove the exists \"placemark.js\" file, error: \"%1\".").arg(jsFile.errorString());
+            qCritical() << QObject::tr("Невозможно удалить существующий \"placemark.js\", ошибка: \"%1\".").arg(jsFile.errorString());
             return 1;
         }
     }
     if (!QFile::copy(":/html/placemark.js", newJsFile)) {
-        qCritical() << QObject::tr("Can't copy \"placemark.js\", abort.");
+        qCritical() << QString("Невозможно скопировать \"placemark.js\", отмена.");
         return 1;
     }
 
@@ -108,6 +108,12 @@ int main(int argc, char *argv[])
 #ifndef Q_OS_ANDROID
     dataFile.setPermissions(QFileDevice::Permission::ReadOther | QFileDevice::Permission::WriteOther);
 #endif
+    if (dataFile.exists()) {
+        if (!dataFile.remove()) {
+            qCritical() << QObject::tr("Невозможно удалить существующий \"data.json\", ошибка: \"%1\".").arg(dataFile.errorString());
+            return 1;
+        }
+    }
     if (!dataFile.open(QFile::WriteOnly)) {
         qCritical() << QString("Невозможно открыть \"data.json\", ошибка: \"%1\".").arg(dataFile.errorString());
         return 1;
