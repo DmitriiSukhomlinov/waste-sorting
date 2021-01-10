@@ -1,6 +1,8 @@
 #include <QDebug>
 #include <QDir>
 #include <QGuiApplication>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQmlEngine>
@@ -15,6 +17,7 @@ static const QString PERMISSION_READ = "android.permission.READ_EXTERNAL_STORAGE
 #endif
 
 static const QString SUBFOLDER = "/stack/html/";
+static const QString DATA_URL = "https://raw.githubusercontent.com/DmitriiSukhomlinov/waste-sorting/master/resources/data.json";
 
 int main(int argc, char *argv[])
 {
@@ -86,6 +89,32 @@ int main(int argc, char *argv[])
     Q_ASSERT(context != nullptr);
 
     context->setContextProperty("htmlUrl", QUrl::fromUserInput(newHtmlFile));
+
+    //Скачиваем файл  данными с github
+    QNetworkAccessManager manager;
+    QNetworkReply *reply = manager.get(QNetworkRequest(QUrl(DATA_URL)));
+
+    //Ожидаем, пока ответ придет
+    QEventLoop loop;
+    QObject::connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
+    loop.exec();
+
+    if(reply->error()) {
+        qCritical() << QString("Ошибка запроса, ошибка: \"%1\".").arg(reply->errorString());
+        return 1;
+    }
+
+    QFile dataFile(tmploc + "/data.json");
+#ifndef Q_OS_ANDROID
+    dataFile.setPermissions(QFileDevice::Permission::ReadOther | QFileDevice::Permission::WriteOther);
+#endif
+    if (!dataFile.open(QFile::WriteOnly)) {
+        qCritical() << QString("Невозможно открыть \"data.json\", ошибка: \"%1\".").arg(dataFile.errorString());
+        return 1;
+    }
+    dataFile.write(reply->readAll());
+    dataFile.close();
+
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
