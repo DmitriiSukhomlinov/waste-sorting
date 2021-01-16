@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
     }
 #endif
 
-    QString tmploc = QStandardPaths::writableLocation(QStandardPaths::TempLocation) + SUBFOLDER;
+    QString tmploc = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + SUBFOLDER;
     tmploc = QDir(tmploc).absolutePath();
     if (!QDir(tmploc).exists()) {
         if (!QDir(tmploc).mkpath(".")) {
@@ -104,7 +104,8 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    QFile dataFile(tmploc + "/data.json");
+    QString newJsonFile(tmploc + "/data.json");
+    QFile dataFile(newJsonFile);
 #ifndef Q_OS_ANDROID
     dataFile.setPermissions(QFileDevice::Permission::ReadOther | QFileDevice::Permission::WriteOther);
 #endif
@@ -121,6 +122,7 @@ int main(int argc, char *argv[])
     dataFile.write(reply->readAll());
     dataFile.close();
 
+    context->setContextProperty("jsonUrl", newJsonFile);
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
