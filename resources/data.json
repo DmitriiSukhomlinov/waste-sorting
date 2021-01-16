@@ -21,6 +21,10 @@
 			"MapPoinName": "Общага",
 			"MapPointDescription": "Тут Таня",
 			"MapPointCoordinates": "54.848059, 83.092295"
+		}, {
+			"MapPoinName": "СТЦ",
+			"MapPointDescription": "Можно похавать (иногда вкусно)",
+			"MapPointCoordinates": "54.846219, 83.093350"
 		}]
 	}
 }
