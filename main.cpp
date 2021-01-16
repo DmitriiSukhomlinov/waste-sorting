@@ -1,8 +1,6 @@
 #include <QDebug>
 #include <QDir>
 #include <QGuiApplication>
-#include <QNetworkAccessManager>
-#include <QNetworkReply>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQmlEngine>
@@ -45,7 +43,7 @@ int main(int argc, char *argv[])
     }
 #endif
 
-    QString tmploc = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + SUBFOLDER;
+    QString tmploc = QStandardPaths::writableLocation(QStandardPaths::TempLocation) + SUBFOLDER;
     tmploc = QDir(tmploc).absolutePath();
     if (!QDir(tmploc).exists()) {
         if (!QDir(tmploc).mkpath(".")) {
@@ -89,40 +87,6 @@ int main(int argc, char *argv[])
     Q_ASSERT(context != nullptr);
 
     context->setContextProperty("htmlUrl", QUrl::fromUserInput(newHtmlFile));
-
-    //Скачиваем файл  данными с github
-    QNetworkAccessManager manager;
-    QNetworkReply *reply = manager.get(QNetworkRequest(QUrl(DATA_URL)));
-
-    //Ожидаем, пока ответ придет
-    QEventLoop loop;
-    QObject::connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
-    loop.exec();
-
-    if(reply->error()) {
-        qCritical() << QString("Ошибка запроса, ошибка: \"%1\".").arg(reply->errorString());
-        return 1;
-    }
-
-    QString newJsonFile(tmploc + "/data.json");
-    QFile dataFile(newJsonFile);
-#ifndef Q_OS_ANDROID
-    dataFile.setPermissions(QFileDevice::Permission::ReadOther | QFileDevice::Permission::WriteOther);
-#endif
-    if (dataFile.exists()) {
-        if (!dataFile.remove()) {
-            qCritical() << QObject::tr("Невозможно удалить существующий \"data.json\", ошибка: \"%1\".").arg(dataFile.errorString());
-            return 1;
-        }
-    }
-    if (!dataFile.open(QFile::WriteOnly)) {
-        qCritical() << QString("Невозможно открыть \"data.json\", ошибка: \"%1\".").arg(dataFile.errorString());
-        return 1;
-    }
-    dataFile.write(reply->readAll());
-    dataFile.close();
-
-    context->setContextProperty("jsonUrl", newJsonFile);
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
