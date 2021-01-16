@@ -30,7 +30,7 @@ Page {
             text: "Бутылки от бытовой химии"
             onClicked: function() {
                 view.push(mapView)
-                mapView.web.runJavaScript("updatePoints(\"" + jsonUrl + "\", \"HDPE\")")
+                mapView.web.runJavaScript("updatePoints(\"HDPE\")")
             }
         }
 

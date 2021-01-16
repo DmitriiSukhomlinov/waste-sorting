@@ -12,7 +12,7 @@ function init() {
   //updatePoints("HDPE")
 }
 
-function updatePoints(dataJson, newPointsType) {
+function updatePoints(newPointsType) {
 
     $.getJSON("https://raw.githubusercontent.com/DmitriiSukhomlinov/waste-sorting/master/resources/data.json", function(data) {
       //Найдем в json файле раздел, соответствующий необходимому нам
