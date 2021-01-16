@@ -14,13 +14,13 @@
 	"HDPE": {
 		"Color": "#FF0000",
 		"MapData": [{
-			"MapPoinName": "И тут название",
-			"MapPointDescription": "Тут вообще много мусора",
-			"MapPointCoordinates": "58.211748, 59.979321"
+			"MapPoinName": "Самая главная мусорка",
+			"MapPointDescription": "Уже сколько лет сюда хожу, все так же",
+			"MapPointCoordinates": "54.842419, 83.089556"
 		}, {
-			"MapPoinName": "Последнее название",
-			"MapPointDescription": "И тут",
-			"MapPointCoordinates": "55.01, 82.55"
+			"MapPoinName": "Общага",
+			"MapPointDescription": "Тут Таня",
+			"MapPointCoordinates": "54.848059, 83.092295"
 		}]
 	}
 }
