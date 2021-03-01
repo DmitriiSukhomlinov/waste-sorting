@@ -14,8 +14,8 @@
 	"household-chemicals-bottles": {
 		"Color": "#FF0000",
 		"MapData": [{
-			"MapPoinName": "Самая главная мусорка",
-			"MapPointDescription": "Уже сколько лет сюда хожу, все так же",
+			"MapPoinName": "ММФ же",
+			"MapPointDescription": "Уже сколько лет сюда хожу",
 			"MapPointCoordinates": "54.842419, 83.089556"
 		}, {
 			"MapPoinName": "Общага",
@@ -28,7 +28,7 @@
 		}]
 	},
 	"jars-of-medicines": {
-		"Color": "#FF0000",
+		"Color": "#0000FF",
 		"MapData": [{
 			"MapPoinName": "Место",
 			"MapPointDescription": "Какое-то",
@@ -37,6 +37,30 @@
 			"MapPoinName": "СТЦ",
 			"MapPointDescription": "Можно похавать (иногда вкусно)",
 			"MapPointCoordinates": "54.846219, 83.093350"
+		}]
+	},
+	"сanisters": {
+		"Color": "#FFFF00",
+		"MapData": [{
+			"MapPoinName": "Про канистры",
+			"MapPointDescription": "Какое-то",
+			"MapPointCoordinates": "54.848059, 83.092295"
+		}, {
+			"MapPoinName": "ММФ же",
+			"MapPointDescription": "Уже сколько лет сюда хожу",
+			"MapPointCoordinates": "54.842419, 83.089556"
+		}]
+	},
+	"packages": {
+		"Color": "#FF00FF",
+		"MapData": [{
+			"MapPoinName": "Про пакеты",
+			"MapPointDescription": "Какое-то",
+			"MapPointCoordinates": "54.848059, 83.092295"
+		}, {
+			"MapPoinName": "ММФ же",
+			"MapPointDescription": "Уже сколько лет сюда хожу",
+			"MapPointCoordinates": "54.842419, 83.089556"
 		}]
 	}
 }
