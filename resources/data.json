@@ -1,5 +1,5 @@
 {
-	"PETE": {
+	"cosmetic-bottles": {
 		"Color": "#00FF00",
 		"MapData": [{
 			"MapPoinName": "Название",
@@ -11,7 +11,7 @@
 			"MapPointCoordinates": "51.221748, 53.929321"
 		}]
 	},
-	"HDPE": {
+	"household-chemicals-bottles": {
 		"Color": "#FF0000",
 		"MapData": [{
 			"MapPoinName": "Самая главная мусорка",
