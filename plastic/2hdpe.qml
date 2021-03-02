@@ -29,33 +29,69 @@ Page {
             Layout.leftMargin: leftMargin
             text: "Бутылки от бытовой химии"
             onClicked: function() {
-                view.push(mapView)
-                mapView.web.runJavaScript("updatePoints(\"HDPE\")")
+                view.push("../prepare_page/prepare_page.qml",
+                          {"view": view,
+                           "mapView": mapView,
+                           "pageTitle": text,
+                           "howPrepare": "Ну там помыть, почистить, вот это вот все. Можно еще что-нибудь сделать.",
+                           "jsScript": "updatePoints(\"household-chemicals-bottles\")" })
             }
         }
 
         Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Бутылки от бытовой косметических средств"
+            text: "Бутылки от косметических средств"
+            onClicked: function() {
+                view.push("../prepare_page/prepare_page.qml",
+                          {"view": view,
+                           "mapView": mapView,
+                           "pageTitle": text,
+                           "howPrepare": "Чистоту навести.",
+                           "jsScript": "updatePoints(\"cosmetic-bottles\")" })
+            }
         }
 
         Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
             text: "Баночки от лекарств"
+            onClicked: function() {
+                view.push("../prepare_page/prepare_page.qml",
+                          {"view": view,
+                           "mapView": mapView,
+                           "pageTitle": text,
+                           "howPrepare": "Почистить-помыть, все такое.",
+                           "jsScript": "updatePoints(\"jars-of-medicines\")" })
+            }
         }
 
         Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
             text: "Канистры"
+            onClicked: function() {
+                view.push("../prepare_page/prepare_page.qml",
+                          {"view": view,
+                           "mapView": mapView,
+                           "pageTitle": text,
+                           "howPrepare": "Я уже не знаю, что сюда написать.",
+                           "jsScript": "updatePoints(\"сanisters\")" })
+            }
         }
 
         Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
             text: "Пакеты"
+            onClicked: function() {
+                view.push("../prepare_page/prepare_page.qml",
+                          {"view": view,
+                           "mapView": mapView,
+                           "pageTitle": text,
+                           "howPrepare": "Последнее описание, на которое меня хватило.",
+                           "jsScript": "updatePoints(\"packages\")" })
+            }
         }
 
         Custom.WSTextHeader {
@@ -70,9 +106,5 @@ Page {
             text: "Тубы от крема, пасты и т.д."
             font.pixelSize: 14
         }
-
-
     }
-
-
 }

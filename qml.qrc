@@ -5,8 +5,8 @@
         <file>ChooseCathegoryPage.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>custom/WSPictureButton.qml</file>
-		<file>custom/WSTextButton.qml</file>
-		<file>custom/WSTextHeader.qml</file>
+        <file>custom/WSTextButton.qml</file>
+        <file>custom/WSTextHeader.qml</file>
         <file>html/placemark.html</file>
         <file>html/placemark.js</file>
         <file>icons/bulbs-pressed.png</file>
@@ -29,6 +29,7 @@
         <file>icons/plastic-pressed.png</file>
         <file>icons/plastic-released.png</file>
         <file>plastic/2hdpe.qml</file>
-		<file>plastic/PlasticMain.qml</file>
+        <file>plastic/PlasticMain.qml</file>
+        <file>prepare_page/prepare_page.qml</file>
     </qresource>
 </RCC>
