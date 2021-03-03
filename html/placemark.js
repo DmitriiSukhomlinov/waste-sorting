@@ -34,8 +34,11 @@ function updatePoints(newPointsType) {
             balloonContentBody: [
               '<address style="font-style: normal">',
               '<h3>Данные</h3>',
-              '<b>Название: </b>' + item.MapPoinName + '<br>',
-              '<b>Описание: </b>' + item.MapPointDescription + '<br>',
+              '<b>Адрес: </b>' + item.MapPointAdress + '<br>',
+              '<b>Категория потребителя: </b>' + item.MapPointCathegory + '<br>',
+              '<b>Кол-во контейнеров: </b>' + item.MapPointQuantity + '<br>',
+              '<b>Тип контейнера: </b>' + item.MapPointType + '<br>',
+              '<b>Объем: </b>' + item.MapPointVolume + '<br>',
               '</address>'
             ].join('')
           }
