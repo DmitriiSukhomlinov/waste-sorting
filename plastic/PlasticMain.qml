@@ -28,6 +28,10 @@ Page {
             pictureSize: picSize
             textBold: true
             otherImageOnClick: false
+
+            onClicked: function() {
+                view.push("1pete.qml", {"view": view, "mapView": mapView})
+            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic-2.png"
@@ -48,6 +52,10 @@ Page {
             pictureSize: picSize
             textBold: true
             otherImageOnClick: false
+
+            onClicked: function() {
+                view.push("3pvc.qml", {"view": view, "mapView": mapView})
+            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic-4.png"
@@ -56,6 +64,10 @@ Page {
             pictureSize: picSize
             textBold: true
             otherImageOnClick: false
+
+            onClicked: function() {
+                view.push("4ldpe.qml", {"view": view, "mapView": mapView})
+            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic-5.png"

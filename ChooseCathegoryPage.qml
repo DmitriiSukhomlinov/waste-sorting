@@ -28,18 +28,23 @@ Page {
             buttonText: "Пластик"
             onClicked: function() {
                 view.push("plastic/PlasticMain.qml", {"view": view, "mapView": mapView})
-                //view.push(mapView)
             }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/glass-released.png"
             pressedImageSource: "../icons/glass-pressed.png"
             buttonText: "Стекло"
+            onClicked: function() {
+                view.push("glass/GlassMain.qml", {"view": view, "mapView": mapView})
+            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/metal-released.png"
             pressedImageSource: "../icons/metal-pressed.png"
             buttonText: "Метал"
+            onClicked: function() {
+                view.push("metal/MetalMain.qml", {"view": view, "mapView": mapView})
+            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/e-waste-released.png"

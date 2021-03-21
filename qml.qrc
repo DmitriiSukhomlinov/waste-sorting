@@ -15,6 +15,8 @@
         <file>icons/e-waste-released.png</file>
         <file>icons/glass-pressed.png</file>
         <file>icons/glass-released.png</file>
+        <file>icons/metal-40.png</file>
+        <file>icons/metal-41.png</file>
         <file>icons/metal-pressed.png</file>
         <file>icons/metal-released.png</file>
         <file>icons/paper-pressed.png</file>
@@ -31,5 +33,12 @@
         <file>plastic/2hdpe.qml</file>
         <file>plastic/PlasticMain.qml</file>
         <file>prepare_page/prepare_page.qml</file>
+        <file>plastic/1pete.qml</file>
+        <file>plastic/3pvc.qml</file>
+        <file>plastic/4ldpe.qml</file>
+        <file>glass/GlassMain.qml</file>
+        <file>metal/MetalMain.qml</file>
+        <file>metal/40fe.qml</file>
+        <file>metal/41alu.qml</file>
     </qresource>
 </RCC>
