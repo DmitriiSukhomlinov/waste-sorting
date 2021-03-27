@@ -1,6 +1,7 @@
 {
     "pete_metall-general": {
         "Color": "#00FF00",
+        "GroupButton": "islands#invertedDarkGreenClusterIcons",
         "MapData": [
             {
                 "MapPointAdress": "Новосибирск, 1905 года, 73",
@@ -11141,7 +11142,8 @@
         ]
     },
 	"glass": {
-        "Color": "#8c2895",
+        "Color": "#0000FF",
+        "GroupButton": "islands#invertedDarkBlueClusterIcons",
         "MapData": [
             {
                 "MapPointAdress": "Селезнева 26/1",
@@ -13146,7 +13148,8 @@
         ]
     },
     "hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans": {
-        "Color": "#d64c67",
+        "Color": "#FF0000",
+        "GroupButton": "islands#invertedRedClusterIcons",
         "MapData": [
             {
                 "MapPointAdress": "Есенина, 12",
@@ -18655,7 +18658,8 @@
         ]
     },
     "paper_cardboard": {
-        "Color": "#4964c4",
+        "Color": "#800080",
+        "GroupButton": "islands#invertedVioletClusterIcons",
         "MapData": [
             {
                 "MapPointAdress": "Лазурная, 6",

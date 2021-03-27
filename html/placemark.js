@@ -49,7 +49,7 @@ function updatePoints(newPointsType) {
       })
       // Создадим кластеризатор после получения и добавления точек
       var clusterer = new ymaps.Clusterer({
-        preset: 'islands#invertedDarkGreenClusterIcons',
+        preset: currentData.GroupButton,
         clusterDisableClickZoom: true,
         clusterBalloonContentLayoutWidth: 800,
         clusterBalloonLeftColumnWidth: 160
