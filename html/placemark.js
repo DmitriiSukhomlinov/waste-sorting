@@ -3,13 +3,36 @@ ymaps.ready(init);
 var map
 
 function init() {
-  map = new ymaps.Map("map", {
-    center: [55.030199, 82.920430],
-    zoom: 10,
-    controls: ['zoomControl']
+  ymaps.geolocation.get().then(function (res) {
+    var mapContainer = $('#map'),
+      bounds = res.geoObjects.get(0).properties.get('boundedBy'),
+      // Рассчитываем видимую область для текущей положения пользователя.
+      mapState = ymaps.util.bounds.getCenterAndZoom(
+        bounds,
+        [mapContainer.width(), mapContainer.height()]
+      );
+    createMap(mapState);
+  }, function (e) {
+    // Если местоположение невозможно получить, то просто создаем карту.
+    createMap({
+      center: [55.030199, 82.920430],
+      zoom: 10,
+      controls: ['zoomControl','geolocationControl']
+    });
   });
 
-  //updatePoints("HDPE")
+
+  function createMap (state) {
+    map = new ymaps.Map("map", state);
+  }
+
+  /*map = new ymaps.Map("map", {
+    center: [55.030199, 82.920430],
+    zoom: 10,
+    controls: ['zoomControl','geolocationControl']
+  });*/
+
+  //updatePoints("pete_metall-general")
 }
 
 function updatePoints(newPointsType) {

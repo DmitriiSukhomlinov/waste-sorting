@@ -11,6 +11,7 @@
 
 static const QString PERMISSION_WRITE = "android.permission.WRITE_EXTERNAL_STORAGE";
 static const QString PERMISSION_READ = "android.permission.READ_EXTERNAL_STORAGE";
+static const QString PERMISSION_LOCATION = "android.permission.ACCESS_FINE_LOCATION";
 
 #endif
 
@@ -32,13 +33,18 @@ int main(int argc, char *argv[])
     //Copy html and js files
 #if defined(Q_OS_ANDROID)
     QtAndroid::PermissionResultMap resultHash = QtAndroid::requestPermissionsSync({PERMISSION_WRITE,
-                                                                                   PERMISSION_READ});
+                                                                                   PERMISSION_READ,
+                                                                                   PERMISSION_LOCATION});
     if (resultHash[PERMISSION_WRITE] == QtAndroid::PermissionResult::Denied) {
         qCritical() << QObject::tr("The write permission is required, abort.");
         return 1;
     }
     if (resultHash[PERMISSION_READ] == QtAndroid::PermissionResult::Denied) {
         qCritical() << QObject::tr("The read permission is required, abort.");
+        return 1;
+    }
+    if (resultHash[PERMISSION_LOCATION] == QtAndroid::PermissionResult::Denied) {
+        qCritical() << QObject::tr("The location permission is required, abort.");
         return 1;
     }
 #endif
