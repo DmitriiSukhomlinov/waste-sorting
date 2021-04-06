@@ -21,7 +21,11 @@ Page {
             releasedImageSource: "../icons/paper-released.png"
             pressedImageSource: "../icons/paper-pressed.png"
             buttonText: "Бумага"
+            onClicked: function() {
+                view.push("paper/PaperMain.qml", {"view": view, "mapView": mapView})
+            }
         }
+
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic-released.png"
             pressedImageSource: "../icons/plastic-pressed.png"

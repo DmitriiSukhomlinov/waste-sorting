@@ -34,7 +34,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Ну там помыть, почистить, вот это вот все. Можно еще что-нибудь сделать.",
-                           "jsScript": "updatePoints(\"household-chemicals-bottles\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
@@ -48,7 +48,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Чистоту навести.",
-                           "jsScript": "updatePoints(\"cosmetic-bottles\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
@@ -62,7 +62,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Почистить-помыть, все такое.",
-                           "jsScript": "updatePoints(\"jars-of-medicines\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
@@ -76,7 +76,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Я уже не знаю, что сюда написать.",
-                           "jsScript": "updatePoints(\"сanisters\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
@@ -90,7 +90,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Последнее описание, на которое меня хватило.",
-                           "jsScript": "updatePoints(\"packages\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 

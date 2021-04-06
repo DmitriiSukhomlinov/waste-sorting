@@ -34,7 +34,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Алюминиевые банки описание как подготовить.",
-                           "jsScript": "updatePoints(\"alu-aluminum-cans\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
@@ -48,7 +48,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Фольга описание как подготовить.",
-                           "jsScript": "updatePoints(\"alu-foil\")" })
+                           "jsScript": "updatePoints(\"pete_metall-general\")" })
             }
         }
 
@@ -62,7 +62,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Баллоны под давлением описание как подготовить.",
-                           "jsScript": "updatePoints(\"alu-pressurized-cylinders\")" })
+                           "jsScript": "updatePoints(\"pete_metall-general\")" })
             }
         }
 
@@ -76,7 +76,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Одноразовые формы для выпечки описание как подготовить.",
-                           "jsScript": "updatePoints(\"alu-disposable-bakeware\")" })
+                           "jsScript": "updatePoints(\"pete_metall-general\")" })
             }
         }
 

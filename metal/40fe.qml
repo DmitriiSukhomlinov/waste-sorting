@@ -34,7 +34,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Консервные банки описание как подготовить.",
-                           "jsScript": "updatePoints(\"fe-cans\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
@@ -48,7 +48,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Крышки от стеклянных банок описание как подготовить.",
-                           "jsScript": "updatePoints(\"fe-glass-jar-lids\")" })
+                           "jsScript": "updatePoints(\"pete_metall-general\")" })
             }
         }
 
@@ -62,7 +62,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Баллоны под давлением описание как подготовить.",
-                           "jsScript": "updatePoints(\"fe-pressurized-cylinders\")" })
+                           "jsScript": "updatePoints(\"pete_metall-general\")" })
             }
         }
 
@@ -76,7 +76,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Металлолом описание как подготовить.",
-                           "jsScript": "updatePoints(\"fe-scrap-metal\")" })
+                           "jsScript": "updatePoints(\"pete_metall-general\")" })
             }
         }
 

@@ -34,7 +34,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Канистры ПВД описание.",
-                           "jsScript": "updatePoints(\"ldpe-canisters\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
@@ -48,7 +48,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Мягкие пакеты от молочных продуктов ПВД описание.",
-                           "jsScript": "updatePoints(\"ldpe-soft-bags\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
@@ -62,7 +62,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Флаконы от бытовой химии ПВД описание.",
-                           "jsScript": "updatePoints(\"ldpe-household-chemicals-vials\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
@@ -76,7 +76,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Упаковки от бытовой техники ПВД описание.",
-                           "jsScript": "updatePoints(\"ldpe-household-appliances-packaging\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
@@ -90,7 +90,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Упаковки от предметов гигиены ПВД описание.",
-                           "jsScript": "updatePoints(\"ldpe-hygiene-packaging\")" })
+                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 

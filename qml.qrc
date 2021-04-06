@@ -40,5 +40,6 @@
         <file>metal/MetalMain.qml</file>
         <file>metal/40fe.qml</file>
         <file>metal/41alu.qml</file>
+        <file>paper/PaperMain.qml</file>
     </qresource>
 </RCC>

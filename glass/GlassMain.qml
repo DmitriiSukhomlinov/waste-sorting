@@ -34,7 +34,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Бутылки стекло описание.",
-                           "jsScript": "updatePoints(\"glass-bottles\")" })
+                           "jsScript": "updatePoints(\"glass\")" })
             }
         }
 
@@ -48,7 +48,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Банки стекло описание.",
-                           "jsScript": "updatePoints(\"glass-jars\")" })
+                           "jsScript": "updatePoints(\"glass\")" })
             }
         }
 
@@ -62,7 +62,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Флаконы стекло описание.",
-                           "jsScript": "updatePoints(\"glass-vials\")" })
+                           "jsScript": "updatePoints(\"glass\")" })
             }
         }
 
@@ -76,7 +76,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Стеклянная посуда стекло описание.",
-                           "jsScript": "updatePoints(\"glass-glassware\")" })
+                           "jsScript": "updatePoints(\"glass\")" })
             }
         }
 
@@ -90,7 +90,7 @@ Page {
                            "mapView": mapView,
                            "pageTitle": text,
                            "howPrepare": "Оконное стекло стекло описание.",
-                           "jsScript": "updatePoints(\"glass-window-glass\")" })
+                           "jsScript": "updatePoints(\"glass\")" })
             }
         }
 

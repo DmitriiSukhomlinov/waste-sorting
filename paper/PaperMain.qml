@@ -14,7 +14,7 @@ Page {
     height: view.height
     width: view.width
 
-    title: "1 PET/ПЭТ"
+    title: "Стекло"
 
     ColumnLayout {
 
@@ -27,28 +27,29 @@ Page {
         Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Бутылки"
+            text: "Бумага"
             onClicked: function() {
                 view.push("../prepare_page/prepare_page.qml",
                           {"view": view,
                            "mapView": mapView,
                            "pageTitle": text,
-                           "howPrepare": "Бутылки ПЭТ описание как подготовить.",
-                           "jsScript": "updatePoints(\"pete_metall-general\")" })
+                           "howPrepare": "Бумага описание.",
+                           "jsScript": "updatePoints(\"paper_cardboard\")" })
             }
         }
 
-        Custom.WSTextHeader {
-            Layout.topMargin: 30
-            Layout.leftMargin: leftMargin
-            labelText: "Что нельзя переработать?"
-        }
-
-        Label {
+        Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Все остальное"
-            font.pixelSize: 14
+            text: "Картон"
+            onClicked: function() {
+                view.push("../prepare_page/prepare_page.qml",
+                          {"view": view,
+                           "mapView": mapView,
+                           "pageTitle": text,
+                           "howPrepare": "Картон описание.",
+                           "jsScript": "updatePoints(\"paper_cardboard\")" })
+            }
         }
     }
 }
