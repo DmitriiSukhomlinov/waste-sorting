@@ -74,8 +74,10 @@ ApplicationWindow {
         Map {
             id: mapView
             view: stackView
-            pageUrl: htmlUrl
+            //pageUrl: htmlUrl
             visible: false
+
+
         }
 
 

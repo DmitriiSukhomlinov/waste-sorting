@@ -6,6 +6,9 @@
 #include <QQmlEngine>
 #include <QStandardPaths>
 
+#include <QMetaObject>
+#include <QResource>
+
 #if defined(Q_OS_ANDROID)
 #include <QtAndroid>
 
@@ -92,7 +95,13 @@ int main(int argc, char *argv[])
     auto context = engine.rootContext();
     Q_ASSERT(context != nullptr);
 
-    context->setContextProperty("htmlUrl", QUrl::fromUserInput(newHtmlFile));
+
+    QResource res(":/html/placemark.html");
+    auto resData = reinterpret_cast<const char *>(res.data());
+    QString strData(resData);
+    context->setContextProperty("htmlUrl", strData);
+    //context->setContextProperty("htmlUrl", QUrl::fromUserInput(newHtmlFile));
+    context->setContextProperty("htmlFolderUrl", QUrl::fromUserInput(":/html/"));
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
@@ -101,6 +110,12 @@ int main(int argc, char *argv[])
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
     engine.load(url);
+
+    //QObject* appWindow = engine.rootObjects().first();
+    //auto obj = appWindow->findChild<QObject*>("webView");
+
+    //QMetaObject::invokeMethod(obj, "")
+    //QMetaObject::invokeMethod(&obj, "someMethod", Qt::DirectConnection);
 
     return app.exec();
 }
