@@ -76,6 +76,11 @@ Page {
             pictureSize: picSize
             textBold: true
             otherImageOnClick: false
+
+
+            onClicked: function() {
+                view.push("5pp.qml", {"view": view, "mapView": mapView})
+            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic-6.png"

@@ -32,7 +32,7 @@ function init() {
     controls: ['zoomControl','geolocationControl']
   });*/
 
-  //updatePoints("pete_metall-general")
+  updatePoints("hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans")
 }
 
 function updatePoints(newPointsType) {
@@ -78,7 +78,7 @@ function updatePoints(newPointsType) {
         clusterBalloonLeftColumnWidth: 160
       });
       clusterer.add(myGeoObjects);
-      map.geoObjects.removeAll();
+      //map.geoObjects.removeAll();
       map.geoObjects.add(clusterer);
       map.setBounds(clusterer.getBounds(), {
         checkZoomRange: true

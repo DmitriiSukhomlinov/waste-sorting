@@ -43,11 +43,13 @@ import QtQuick 2.12
 Rectangle {
     id: container
 
+    property alias header: header.text
     property alias text: label.text
 
     signal clicked
 
-    width: label.width + 20; height: label.height + 6
+    width: label.width + 20;
+    height: header.height + label.height
     smooth: true
     radius: 10
 
@@ -64,10 +66,25 @@ Rectangle {
         onClicked: { container.clicked() }
     }
 
-    Text {
-        id: label
-        anchors.centerIn: parent
-        font.pixelSize: 14
+    Column {
+        anchors.top: parent.top
+
+        Text {
+            id: header
+            x: 10
+            font.pixelSize: 18
+            font.bold: true
+            color: "#33cccc"
+        }
+
+        Text {
+            id: label
+            x: 10
+            font.pixelSize: 14
+            wrapMode: Text.WordWrap
+            //Layout.preferredWidth: parent.width - 100
+            width: container.parent.width - 100
+        }
     }
 
     states: State {

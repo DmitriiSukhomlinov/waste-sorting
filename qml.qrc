@@ -41,5 +41,9 @@
         <file>metal/40fe.qml</file>
         <file>metal/41alu.qml</file>
         <file>paper/PaperMain.qml</file>
+        <file>plastic/5pp.qml</file>
+        <file>icons/plastic/5pp/page-icon.png</file>
+        <file>prepare_page/how_2_prep.qml</file>
+        <file>custom/WSPrepareAndDescription.qml</file>
     </qresource>
 </RCC>
