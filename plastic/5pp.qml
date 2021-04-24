@@ -6,6 +6,7 @@ import "../custom" as Custom
 import "../"
 
 Page {
+    id: page
     property StackView view
     property Map mapView
 
@@ -21,8 +22,7 @@ Page {
         Image {
             Layout.leftMargin: leftMargin
             Layout.alignment: Qt.AlignHCenter
-            Layout.preferredWidth: parent.width / 2
-            Layout.preferredHeight: Layout.preferredWidth / 2.75
+            Layout.topMargin: 10
             source: "../icons/plastic/5pp/page-icon.png"
         }
 
@@ -34,6 +34,7 @@ Page {
         Custom.WSTextButton {
             Layout.topMargin: 20
             Layout.leftMargin: leftMargin
+            width: 300
             header: "Твердый пластик"
             text: "<ul>
                    <li>Тазы</li>
@@ -48,8 +49,8 @@ Page {
                           {"view": view,
                            "mapView": mapView,
                            "pageTitle": header,
-                           "prepareText": "Опустошить, этикетку не снимать, \"кидать\" без пакетов.",
-                           "prepareTextHeight": "50",
+                           "mapPrepareText": "Опустошить, этикетку не снимать, \"кидать\" без пакетов.",
+                           "mapPrepareTextHeight": "50",
                            "ecoPrepareText": "Вымыть, высушить, снять или вырезать все бумажные бумажные наклейки, сложить друг в друга / за  дополнительную плату можно весь пластик сдать в одном пакете.",
                            "ecoPrepareTextHeight": "80",
                            "placePrepareText": "Вымыть, высушить, снять или вырезать все бумажные бумажные наклейки, сложить друг в друга.",
@@ -63,6 +64,7 @@ Page {
         Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
+            width: 300
             header: "Мягкий пластик"
             text: "<ul>
                    <li>Упаковки от круп</li>
@@ -74,7 +76,12 @@ Page {
                           {"view": view,
                            "mapView": mapView,
                            "pageTitle": header,
-                           "howPrepare": "Канистры ПВД описание.",
+                           "ecoPrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один 5-PP пакет.",
+                           "ecoPrepareTextHeight": "80",
+                           "placePrepareText": "Снять или вырезать бумажные наклейки (если маркировка только там, перенести её маркером на пластик), отмыть от грязи и жира, высушить. Сложить все пакеты в один 5-PP пакет.",
+                           "placePrepareTextHeight": "80",
+                           "squirrelPrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один 5-PP пакет (за дополнительную плату можно весь пластик сдать в одном пакете).",
+                           "squirrelPrepareTextHeight": "80",
                            "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }

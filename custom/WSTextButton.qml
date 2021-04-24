@@ -83,7 +83,7 @@ Rectangle {
             font.pixelSize: 14
             wrapMode: Text.WordWrap
             //Layout.preferredWidth: parent.width - 100
-            width: container.parent.width - 100
+            width: container.parent.width - 70
         }
     }
 

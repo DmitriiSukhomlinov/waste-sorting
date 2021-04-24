@@ -6,6 +6,7 @@ import "../custom" as Custom
 import "../"
 
 Page {
+    id: page
     property StackView view
     property Map mapView
 
@@ -18,22 +19,39 @@ Page {
 
     ColumnLayout {
 
+        Image {
+            Layout.leftMargin: leftMargin
+            Layout.alignment: Qt.AlignHCenter
+            Layout.topMargin: 10
+            source: "../icons/plastic/2hdpe/page-icon.png"
+        }
+
         Custom.WSTextHeader {
-            Layout.topMargin: 30
             Layout.leftMargin: leftMargin
-            labelText: "Что можно переработать?"
+            labelText: "Принимается"
         }
 
         Custom.WSTextButton {
-            Layout.topMargin: 10
+            Layout.topMargin: 20
             Layout.leftMargin: leftMargin
-            text: "Бутылки от бытовой химии"
+            width: 300
+            header: "Твердый пластик"
+            text: "<ul>
+                   <li>Флаконы от бытовой химии</li>
+                   </ul>"
             onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
+                view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
                            "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Ну там помыть, почистить, вот это вот все. Можно еще что-нибудь сделать.",
+                           "pageTitle": header,
+                           "mapPrepareText": "Опустошить, этикетку не снимать, кидать без пакетов.\nКрышки можно снять и сдать на переработку отдельно.",
+                           "mapPrepareTextHeight": "80",
+                           "ecoPrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, этикетки оставить, сложить в отдельный пакет (за дополнительную плату можно весь пластик сдать в одном пакете).",
+                           "ecoPrepareTextHeight": "80",
+                           "placePrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, сжать, этикетки оставить.",
+                           "placePrepareTextHeight": "50",
+                           "squirrelPrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, сжать, этикетки оставить.",
+                           "squirrelPrepareTextHeight": "70",
                            "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
@@ -41,69 +59,40 @@ Page {
         Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Бутылки от косметических средств"
+            width: 300
+            header: "Мягкий пластик"
+            text: "<ul>
+                   <li>Упаковки от бытовой техники</li>
+                   <li>Пакеты молочных продуктов</li>
+                   <li>Пакеты от лаваша</li>
+                   </ul>"
             onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
+                view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
                            "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Чистоту навести.",
-                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Баночки от лекарств"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Почистить-помыть, все такое.",
-                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Канистры"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Я уже не знаю, что сюда написать.",
-                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Пакеты"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Последнее описание, на которое меня хватило.",
+                           "pageTitle": header,
+                           "ecoPrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один (за дополнительную плату можно весь пластик сдать в одном пакете).",
+                           "ecoPrepareTextHeight": "80",
+                           "placePrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один.",
+                           "placePrepareTextHeight": "70",
+                           "squirrelPrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один.",
+                           "squirrelPrepareTextHeight": "70",
                            "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
 
         Custom.WSTextHeader {
-            Layout.topMargin: 30
+            Layout.topMargin: 20
             Layout.leftMargin: leftMargin
-            labelText: "Что нельзя переработать?"
+            labelText: "Не принимается"
         }
 
         Label {
-            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Тубы от крема, пасты и т.д."
+            text: "<ul>
+                   <li>Отходы с маркировкой C/HDPE</li>
+                   <li>Тубы от кремов, пасты и т.д.</li>
+                   </ul>"
             font.pixelSize: 14
         }
     }

@@ -6,6 +6,7 @@ import "../custom" as Custom
 import "../"
 
 Page {
+    id: page
     property StackView view
     property Map mapView
 
@@ -19,112 +20,56 @@ Page {
     ColumnLayout {
 
         Custom.WSTextHeader {
-            Layout.topMargin: 30
             Layout.leftMargin: leftMargin
-            labelText: "Что можно переработать?"
+            Layout.topMargin: 10
+            labelText: "Принимается"
         }
 
         Custom.WSTextButton {
-            Layout.topMargin: 10
+            Layout.topMargin: 20
             Layout.leftMargin: leftMargin
-            text: "Бутылки"
+            width: 300
+            header: "Стеклянные изделия"
+            text: "<ul>
+                   <li>Бутылки и банки</li>
+                   <li>Баночки от детского питания</li>
+                   <li>Флаконы от лекарств, духов</li>
+                   <li>Стеклянная посуда</li>
+                   <li>Оконное стекло</li>
+                   </ul>"
             onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
+                view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
                            "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Бутылки стекло описание.",
-                           "jsScript": "updatePoints(\"glass\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Банки"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Банки стекло описание.",
-                           "jsScript": "updatePoints(\"glass\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Флаконы"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Флаконы стекло описание.",
-                           "jsScript": "updatePoints(\"glass\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Стеклянная посуда"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Стеклянная посуда стекло описание.",
-                           "jsScript": "updatePoints(\"glass\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Оконное стекло"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Оконное стекло стекло описание.",
+                           "pageTitle": header,
+                           "mapPrepareText": "Опустошить, этикетку не снимать, кидать без пакетов.",
+                           "mapPrepareTextHeight": "50",
+                           "ecoPrepareText": "Вымыть, высушить, снять крышки, этикетки оставить, безопасно упаковать.",
+                           "ecoPrepareTextHeight": "60",
+                           "placePrepareText": "Вымыть, высушить, снять крышки, этикетки оставить, безопасно упаковать.",
+                           "placePrepareTextHeight": "60",
+                           "squirrelPrepareText": "Вымыть, высушить, снять крышки, этикетки оставить, безопасно упаковать. Битую тару упаковать отдельно.",
+                           "squirrelPrepareTextHeight": "80",
                            "jsScript": "updatePoints(\"glass\")" })
             }
         }
 
         Custom.WSTextHeader {
-            Layout.topMargin: 30
+            Layout.topMargin: 20
             Layout.leftMargin: leftMargin
-            labelText: "Что нельзя переработать?"
+            labelText: "Не принимается"
         }
 
         Label {
-            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Керамика"
-            font.pixelSize: 14
-        }
-
-        Label {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Хрусталь"
-            font.pixelSize: 14
-        }
-
-        Label {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Противоударная посуда"
-            font.pixelSize: 14
-        }
-
-        Label {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Лампочки"
+            text: "<ul>
+                   <li>Хрустальная посуда</li>
+                   <li>Керамическая посуда</li>
+                   <li>Фарфоровая посуда</li>
+                   <li>Лампы</li>
+                   <li>Противоударная посуда</li>
+                   <li>Зеркала</li>
+                   </ul>"
             font.pixelSize: 14
         }
     }

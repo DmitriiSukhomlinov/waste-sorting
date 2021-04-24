@@ -78,7 +78,7 @@ function updatePoints(newPointsType) {
         clusterBalloonLeftColumnWidth: 160
       });
       clusterer.add(myGeoObjects);
-      //map.geoObjects.removeAll();
+      map.geoObjects.removeAll();
       map.geoObjects.add(clusterer);
       map.setBounds(clusterer.getBounds(), {
         checkZoomRange: true

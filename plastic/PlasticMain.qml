@@ -22,8 +22,8 @@ Page {
         columns: 3
 
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/plastic-1.png"
-            pressedImageSource: "../icons/plastic-1.png"
+            releasedImageSource: "../icons/plastic/1pete/icon.png"
+            pressedImageSource: "../icons/plastic/1pete/icon.png"
             buttonText: "PETE"
             pictureSize: picSize
             textBold: true
@@ -34,8 +34,8 @@ Page {
             }
         }
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/plastic-2.png"
-            pressedImageSource: "../icons/plastic-2.png"
+            releasedImageSource: "../icons/plastic/2hdpe/icon.png"
+            pressedImageSource: "../icons/plastic/2hdpe/icon.png"
             buttonText: "HDPE"
             pictureSize: picSize
             textBold: true
@@ -46,8 +46,8 @@ Page {
             }
         }
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/plastic-3.png"
-            pressedImageSource: "../icons/plastic-3.png"
+            releasedImageSource: "../icons/plastic/3pvc/icon.png"
+            pressedImageSource: "../icons/plastic/3pvc/icon.png"
             buttonText: "PVC"
             pictureSize: picSize
             textBold: true
@@ -58,8 +58,8 @@ Page {
             }
         }
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/plastic-4.png"
-            pressedImageSource: "../icons/plastic-4.png"
+            releasedImageSource: "../icons/plastic/4ldpe/icon.png"
+            pressedImageSource: "../icons/plastic/4ldpe/icon.png"
             buttonText: "LDPE"
             pictureSize: picSize
             textBold: true
@@ -70,33 +70,54 @@ Page {
             }
         }
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/plastic-5.png"
-            pressedImageSource: "../icons/plastic-5.png"
+            releasedImageSource: "../icons/plastic/5pp/icon.png"
+            pressedImageSource: "../icons/plastic/5pp/icon.png"
             buttonText: "PP"
             pictureSize: picSize
             textBold: true
             otherImageOnClick: false
-
 
             onClicked: function() {
                 view.push("5pp.qml", {"view": view, "mapView": mapView})
             }
         }
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/plastic-6.png"
-            pressedImageSource: "../icons/plastic-6.png"
+            releasedImageSource: "../icons/plastic/6ps/icon.png"
+            pressedImageSource: "../icons/plastic/6ps/icon.png"
             buttonText: "PS"
             pictureSize: picSize
             textBold: true
             otherImageOnClick: false
+
+            onClicked: function() {
+                view.push("6ps.qml", {"view": view, "mapView": mapView})
+            }
         }
+
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/plastic-7.png"
-            pressedImageSource: "../icons/plastic-7.png"
+            releasedImageSource: "../icons/plastic/7other/icon.png"
+            pressedImageSource: "../icons/plastic/7other/icon.png"
             buttonText: "OTHER"
             pictureSize: picSize
             textBold: true
             otherImageOnClick: false
+
+            onClicked: function() {
+                view.push("7.qml", {"view": view, "mapView": mapView})
+            }
+        }
+
+        Custom.WSPictureButton {
+            releasedImageSource: "../icons/plastic/8extra/icon.png"
+            pressedImageSource: "../icons/plastic/8extra/icon.png"
+            buttonText: "EXTRA"
+            pictureSize: picSize
+            textBold: true
+            otherImageOnClick: false
+
+            onClicked: function() {
+                view.push("other.qml", {"view": view, "mapView": mapView})
+            }
         }
     }
 }

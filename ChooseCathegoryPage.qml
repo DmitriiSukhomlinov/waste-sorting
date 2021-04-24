@@ -18,47 +18,57 @@ Page {
         columns: 2
 
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/paper-released.png"
-            pressedImageSource: "../icons/paper-pressed.png"
-            buttonText: "Бумага"
+            releasedImageSource: "../icons/paper/icon-main.png"
+            pressedImageSource: "../icons/paper/icon-main.png"
+            otherImageOnClick: false
             onClicked: function() {
                 view.push("paper/PaperMain.qml", {"view": view, "mapView": mapView})
             }
         }
 
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/plastic-released.png"
-            pressedImageSource: "../icons/plastic-pressed.png"
-            buttonText: "Пластик"
+            releasedImageSource: "../icons/plastic/icon-main.png"
+            pressedImageSource: "../icons/plastic/icon-main.png"
+            otherImageOnClick: false
             onClicked: function() {
                 view.push("plastic/PlasticMain.qml", {"view": view, "mapView": mapView})
             }
         }
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/glass-released.png"
-            pressedImageSource: "../icons/glass-pressed.png"
-            buttonText: "Стекло"
+            releasedImageSource: "../icons/glass/icon-main.png"
+            pressedImageSource: "../icons/glass/icon-main.png"
+            otherImageOnClick: false
             onClicked: function() {
                 view.push("glass/GlassMain.qml", {"view": view, "mapView": mapView})
             }
         }
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/metal-released.png"
-            pressedImageSource: "../icons/metal-pressed.png"
-            buttonText: "Метал"
+            releasedImageSource: "../icons/metal/icon-main.png"
+            pressedImageSource: "../icons/metal/icon-main.png"
+            otherImageOnClick: false
             onClicked: function() {
                 view.push("metal/MetalMain.qml", {"view": view, "mapView": mapView})
             }
         }
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/e-waste-released.png"
-            pressedImageSource: "../icons/e-waste-pressed.png"
-            buttonText: "Электроника"
+            releasedImageSource: "../icons/e-waste/icon-main.png"
+            pressedImageSource: "../icons/e-waste/icon-main.png"
+            otherImageOnClick: false
         }
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/bulbs-released.png"
-            pressedImageSource: "../icons/bulbs-pressed.png"
-            buttonText: "Лампочки"
+            releasedImageSource: "../icons/clothes/icon-main.png"
+            pressedImageSource: "../icons/clothes/icon-main.png"
+            otherImageOnClick: false
+        }
+        Custom.WSPictureButton {
+            releasedImageSource: "../icons/textile/icon-main.png"
+            pressedImageSource: "../icons/textile/icon-main.png"
+            otherImageOnClick: false
+        }
+        Custom.WSPictureButton {
+            releasedImageSource: "../icons/danger/icon-main.png"
+            pressedImageSource: "../icons/danger/icon-main.png"
+            otherImageOnClick: false
         }
 
     }

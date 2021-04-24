@@ -14,26 +14,24 @@ Page {
     height: view.height
     width: view.width
 
-    title: "3 PVC/ПВХ"
+    title: "EXTRA"
 
     ColumnLayout {
-
-        Image {
-            Layout.leftMargin: leftMargin
-            Layout.alignment: Qt.AlignHCenter
-            Layout.topMargin: 10
-            source: "../icons/plastic/3pvc/page-icon.png"
-        }
-
         Custom.WSTextHeader {
             Layout.topMargin: 30
             Layout.leftMargin: leftMargin
-            labelText: "Не перерабатывается"
+            labelText: "Без маркировки"
         }
 
         Label {
             Layout.leftMargin: leftMargin
-            text: "Пластик с данной маркировкой не перерабатывается."
+            text: "<ul>
+                   <li>Крышки</li>
+                   <li>Пакеты</li>
+                   <li>Строительная стретч-пленка</li>
+                   <li>Воздушно-пузырьковая плёнка (\"пупырка\")</li>
+                   <li>Пластиковые карты</li>
+                   </ul>"
             font.pixelSize: 14
         }
     }

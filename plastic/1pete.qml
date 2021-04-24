@@ -6,6 +6,7 @@ import "../custom" as Custom
 import "../"
 
 Page {
+    id: page
     property StackView view
     property Map mapView
 
@@ -18,36 +19,57 @@ Page {
 
     ColumnLayout {
 
-        Custom.WSTextHeader {
-            Layout.topMargin: 30
+        Image {
             Layout.leftMargin: leftMargin
-            labelText: "Что можно переработать?"
+            Layout.alignment: Qt.AlignHCenter
+            Layout.topMargin: 10
+            source: "../icons/plastic/1pete/page-icon.png"
+        }
+
+        Custom.WSTextHeader {
+            Layout.leftMargin: leftMargin
+            labelText: "Принимается"
         }
 
         Custom.WSTextButton {
-            Layout.topMargin: 10
+            Layout.topMargin: 20
             Layout.leftMargin: leftMargin
-            text: "Бутылки"
+            header: "Бутылки"
+            text: "<ul>
+                   <li>Бутылки любых цветов</li>
+                   </ul>"
             onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
+                view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
                            "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Бутылки ПЭТ описание как подготовить.",
+                           "pageTitle": header,
+                           "mapPrepareText": "Опустошить, этикетку не снимать, сжать, кидать без пакетов./nКрышки можно снять и сдать на переработку отдельно.",
+                           "mapPrepareTextHeight": "70",
+                           "ecoPrepareText": "Крышки снять и сложить отдельно, этикетки оставить, сжать, сложить в отдельный пакет (за дополнительную плату можно весь пластик сдать в одном пакете).",
+                           "ecoPrepareTextHeight": "80",
+                           "placePrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, этикетки оставить, сжать, сложить в отдельный пакет.",
+                           "placePrepareTextHeight": "70",
+                           "squirrelPrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, этикетки оставить, сжать, сложить в отдельный пакет.",
+                           "squirrelPrepareTextHeight": "80",
                            "jsScript": "updatePoints(\"pete_metall-general\")" })
             }
         }
 
         Custom.WSTextHeader {
-            Layout.topMargin: 30
+            Layout.topMargin: 20
             Layout.leftMargin: leftMargin
-            labelText: "Что нельзя переработать?"
+            labelText: "Не принимается"
         }
 
         Label {
-            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Все остальное"
+            text: "<ul>
+                   <li>Отходы с маркировкой C/PET</li>
+                   <li>Контейнеры</li>
+                   <li>Стаканчики</li>
+                   <li>Мягкие упаковки</li>
+                   <li>Другое</li>
+                   </ul>"
             font.pixelSize: 14
         }
     }

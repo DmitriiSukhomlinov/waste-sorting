@@ -14,7 +14,7 @@ Page {
     height: view.height
     width: view.width
 
-    title: "3 PVC/ПВХ"
+    title: "7 OTHER"
 
     ColumnLayout {
 
@@ -22,7 +22,7 @@ Page {
             Layout.leftMargin: leftMargin
             Layout.alignment: Qt.AlignHCenter
             Layout.topMargin: 10
-            source: "../icons/plastic/3pvc/page-icon.png"
+            source: "../icons/plastic/7other/page-icon.png"
         }
 
         Custom.WSTextHeader {

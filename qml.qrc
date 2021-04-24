@@ -9,27 +9,6 @@
         <file>custom/WSTextHeader.qml</file>
         <file>html/placemark.html</file>
         <file>html/placemark.js</file>
-        <file>icons/bulbs-pressed.png</file>
-        <file>icons/bulbs-released.png</file>
-        <file>icons/e-waste-pressed.png</file>
-        <file>icons/e-waste-released.png</file>
-        <file>icons/glass-pressed.png</file>
-        <file>icons/glass-released.png</file>
-        <file>icons/metal-40.png</file>
-        <file>icons/metal-41.png</file>
-        <file>icons/metal-pressed.png</file>
-        <file>icons/metal-released.png</file>
-        <file>icons/paper-pressed.png</file>
-        <file>icons/paper-released.png</file>
-        <file>icons/plastic-1.png</file>
-        <file>icons/plastic-2.png</file>
-        <file>icons/plastic-3.png</file>
-        <file>icons/plastic-4.png</file>
-        <file>icons/plastic-5.png</file>
-        <file>icons/plastic-6.png</file>
-        <file>icons/plastic-7.png</file>
-        <file>icons/plastic-pressed.png</file>
-        <file>icons/plastic-released.png</file>
         <file>plastic/2hdpe.qml</file>
         <file>plastic/PlasticMain.qml</file>
         <file>prepare_page/prepare_page.qml</file>
@@ -45,5 +24,33 @@
         <file>icons/plastic/5pp/page-icon.png</file>
         <file>prepare_page/how_2_prep.qml</file>
         <file>custom/WSPrepareAndDescription.qml</file>
+        <file>plastic/6ps.qml</file>
+        <file>plastic/7.qml</file>
+        <file>plastic/other.qml</file>
+        <file>icons/plastic/icon-main.png</file>
+        <file>icons/plastic/1pete/icon.png</file>
+        <file>icons/plastic/2hdpe/icon.png</file>
+        <file>icons/plastic/3pvc/icon.png</file>
+        <file>icons/plastic/4ldpe/icon.png</file>
+        <file>icons/plastic/5pp/icon.png</file>
+        <file>icons/plastic/6ps/icon.png</file>
+        <file>icons/plastic/7other/icon.png</file>
+        <file>icons/plastic/8extra/icon.png</file>
+        <file>icons/glass/icon-main.png</file>
+        <file>icons/clothes/icon-main.png</file>
+        <file>icons/danger/icon-main.png</file>
+        <file>icons/e-waste/icon-main.png</file>
+        <file>icons/metal/40fe/icon.png</file>
+        <file>icons/metal/41alu/icon.png</file>
+        <file>icons/metal/icon-main.png</file>
+        <file>icons/paper/icon-main.png</file>
+        <file>icons/textile/icon-main.png</file>
+        <file>icons/app-icon.png</file>
+        <file>icons/plastic/1pete/page-icon.png</file>
+        <file>icons/plastic/2hdpe/page-icon.png</file>
+        <file>icons/plastic/3pvc/page-icon.png</file>
+        <file>icons/plastic/4ldpe/page-icon.png</file>
+        <file>icons/plastic/6ps/page-icon.png</file>
+        <file>icons/plastic/7other/page-icon.png</file>
     </qresource>
 </RCC>
