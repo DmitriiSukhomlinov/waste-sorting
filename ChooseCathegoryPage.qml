@@ -9,12 +9,13 @@ Page {
     property Map mapView
     id: page
 
-
     title: "Выбор категории"
 
     GridLayout {
         id: grid
         anchors.fill: parent
+        //Не работает на Android
+        anchors.bottomMargin: 40
         columns: 2
 
         Custom.WSPictureButton {
@@ -70,6 +71,5 @@ Page {
             pressedImageSource: "../icons/danger/icon-main.png"
             otherImageOnClick: false
         }
-
     }
 }

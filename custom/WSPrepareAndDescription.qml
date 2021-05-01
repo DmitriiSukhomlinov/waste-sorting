@@ -12,7 +12,7 @@ Item {
             id: header
             x: 10
             font.pixelSize: 16
-            color: "#73E2C9"
+            color: "#216184"
             text: "Подготовка"
         }
 

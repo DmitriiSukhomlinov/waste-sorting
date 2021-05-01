@@ -69,9 +69,10 @@ Page {
 
             Custom.WSTextButton {
                 Layout.topMargin: 10
+                showExternalLink: true
                 Layout.leftMargin: leftMargin
                 header: "Заказать экотакси"
-                text: "Вторсырье могут забрать у вашего дома в один из дней выезда, устанавливаемых организвацией. Стоимость услуги зависит от региона. Узнать стоимость и оставить заявку можно в группе организации.."
+                text: "Вторсырье могут забрать у вашего дома в один из дней выезда, устанавливаемых организацией. Стоимость услуги зависит от региона. Узнать стоимость и оставить заявку можно в группе организации."
                 visible: ecoPrepareTextHeight != 0
                 onClicked: function() {
                     Qt.openUrlExternally("https://vk.com/ecotaxi_nsk")
@@ -94,6 +95,7 @@ Page {
 
             Custom.WSTextButton {
                 Layout.topMargin: 10
+                showExternalLink: true
                 Layout.leftMargin: leftMargin
                 header: "Отнести в пункт приема"
                 text: "Экоцентр ProZero (Восход 1)\nГрафик работы: сб, вс с 12:00 до 20:00"
@@ -120,6 +122,7 @@ Page {
 
             Custom.WSTextButton {
                 Layout.topMargin: 10
+                showExternalLink: true
                 Layout.leftMargin: leftMargin
                 header: "Сдать на акции \"Зеленая белка\""
                 text: "Предварительно разобранное вторсырье можно сдать на одной из точек сбора в день проведения акции. Расписание и расположение точек указано в группе акции."

@@ -19,21 +19,23 @@ Page {
 
     ColumnLayout {
 
-        Image {
+        /*Image {
             Layout.leftMargin: leftMargin
             Layout.alignment: Qt.AlignHCenter
             Layout.topMargin: 10
             source: "../icons/plastic/6ps/page-icon.png"
-        }
+        }*/
 
         Custom.WSTextHeader {
+            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
             labelText: "Принимается"
         }
 
         Custom.WSTextButton {
-            Layout.topMargin: 20
+            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
+            width: 300
             header: "Разное"
             text: "<ul>
                    <li>Лотки из-под яиц</li>
@@ -51,9 +53,9 @@ Page {
                            "mapPrepareText": "Опустошить, этикетку не снимать, сжать, кидать без пакетов.",
                            "mapPrepareTextHeight": "50",
                            "ecoPrepareText": "Вымыть, высушить, снять или вырезать бумажные наклейки, сложить друг в друга (за дополнительную плату можно весь пластик сдать в одном пакете).",
-                           "ecoPrepareTextHeight": "80",
+                           "ecoPrepareTextHeight": "100",
                            "placePrepareText": "Вымыть, высушить, снять или вырезать бумажные наклейки, сложить друг в друга.",
-                           "placePrepareTextHeight": "50",
+                           "placePrepareTextHeight": "70",
                            "squirrelPrepareText": "Вымыть, высушить, снять или вырезать бумажные наклейки, сложить друг в друга.",
                            "squirrelPrepareTextHeight": "80",
                            "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })

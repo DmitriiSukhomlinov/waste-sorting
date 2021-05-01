@@ -53,15 +53,15 @@ function updatePoints(newPointsType) {
             coordinates: item.MapPointCoordinates.split(', ')
           },
           properties: {
-            clusterCaption: 'Описание в кластере',
+            clusterCaption: 'Контейнер',
             balloonContentBody: [
               '<address style="font-style: normal">',
               '<h3>Данные</h3>',
               '<b>Адрес: </b>' + item.MapPointAdress + '<br>',
-              '<b>Категория потребителя: </b>' + item.MapPointCathegory + '<br>',
+              /*'<b>Категория потребителя: </b>' + item.MapPointCathegory + '<br>',
               '<b>Кол-во контейнеров: </b>' + item.MapPointQuantity + '<br>',
               '<b>Тип контейнера: </b>' + item.MapPointType + '<br>',
-              '<b>Объем: </b>' + item.MapPointVolume + '<br>',
+              '<b>Объем: </b>' + item.MapPointVolume + '<br>',*/
               '</address>'
             ].join('')
           }

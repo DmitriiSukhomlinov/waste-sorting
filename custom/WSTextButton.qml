@@ -45,18 +45,22 @@ Rectangle {
 
     property alias header: header.text
     property alias text: label.text
+    property bool showExternalLink: false
 
     signal clicked
 
     width: label.width + 20;
     height: header.height + label.height
-    smooth: true
-    radius: 10
+    //smooth: true
+    //radius: 10
 
-    gradient: Gradient {
+    color: "#FAFAFA"
+
+
+    /*gradient: Gradient {
         GradientStop { id: gradientStop; position: 0.0; color: palette.light }
         GradientStop { position: 1.0; color: palette.button }
-    }
+    }*/
 
     SystemPalette { id: palette }
 
@@ -69,12 +73,33 @@ Rectangle {
     Column {
         anchors.top: parent.top
 
-        Text {
-            id: header
-            x: 10
-            font.pixelSize: 18
-            font.bold: true
-            color: "#33cccc"
+        Row {
+            spacing: 10
+            anchors.leftMargin: 20
+
+            Text {
+                id: header
+                x: 10
+                font.pixelSize: 18
+                font.bold: true
+                color: "#33cccc"
+                Component.onCompleted: function() {
+                    text = "  "+ text
+                    if (!showExternalLink) {
+                        text += "    >"
+                    }
+                }
+            }
+
+            Image {
+                id: externalLink
+                //source:
+                Component.onCompleted: function() {
+                    if (showExternalLink) {
+                        externalLink.source = "../icons/external_link.png"
+                    }
+                }
+            }
         }
 
         Text {
@@ -82,7 +107,6 @@ Rectangle {
             x: 10
             font.pixelSize: 14
             wrapMode: Text.WordWrap
-            //Layout.preferredWidth: parent.width - 100
             width: container.parent.width - 70
         }
     }
@@ -90,6 +114,6 @@ Rectangle {
     states: State {
         name: "pressed"
         when: mouseArea.pressed
-        PropertyChanges { target: gradientStop; color: palette.dark }
+        PropertyChanges { target: container; color: "#e6e6e6" }
     }
 }

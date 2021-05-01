@@ -27,56 +27,28 @@ Page {
         Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Консервные банки"
+            width: 300
+            header: "Разное"
+            text: "<ul>
+                   <li>Консервные банки</li>
+                   <li>Крышки от стеклянных банок</li>
+                   <li>Баллоны под давлением</li>
+                   <li>Металлолом</li>
+                   </ul>"
             onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
+                view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
                            "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Консервные банки описание как подготовить.",
+                           "pageTitle": header,
+                           "mapPrepareText": "Опустошить, сжать, кидать без пакетов. Предметы мельче консервной банки сдавать другим способом.",
+                           "mapPrepareTextHeight": "100",
+                           "ecoPrepareText": "Опустошить, сложить в отдельный пакет.",
+                           "ecoPrepareTextHeight": "50",
+                           "placePrepareText": "Вымыть, высушить, сжать или компактно сложить.",
+                           "placePrepareTextHeight": "50",
+                           "squirrelPrepareText": "Вымыть, высушить, сжать или компактно сложить.",
+                           "squirrelPrepareTextHeight": "70",
                            "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Крышки от стеклянных банок"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Крышки от стеклянных банок описание как подготовить.",
-                           "jsScript": "updatePoints(\"pete_metall-general\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Баллоны под давлением"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Баллоны под давлением описание как подготовить.",
-                           "jsScript": "updatePoints(\"pete_metall-general\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Металлолом"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Металлолом описание как подготовить.",
-                           "jsScript": "updatePoints(\"pete_metall-general\")" })
             }
         }
 
@@ -89,14 +61,14 @@ Page {
         Label {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Посуда для готовки с покрытием (антипригарное и др.)"
+            text: "Посуда для готовки с покрытием\n(антипригарное и др.)"
             font.pixelSize: 14
         }
 
         Label {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Предметы из комбинированного материала (металл + дерево и др.)"
+            text: "Предметы из комбинированного\nматериала (металл + дерево и др.)"
             font.pixelSize: 14
         }
     }

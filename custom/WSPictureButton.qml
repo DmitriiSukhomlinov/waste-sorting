@@ -57,7 +57,7 @@ Item {
     property string releasedImageSource: ""
     property string pressedImageSource: ""
     property string buttonText: ""
-    property int pictureSize: 150
+    property int pictureSize: 130
     property bool textBold: false
     property bool otherImageOnClick: true
 

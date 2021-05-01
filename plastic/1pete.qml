@@ -19,12 +19,12 @@ Page {
 
     ColumnLayout {
 
-        Image {
+        /*Image {
             Layout.leftMargin: leftMargin
             Layout.alignment: Qt.AlignHCenter
             Layout.topMargin: 10
             source: "../icons/plastic/1pete/page-icon.png"
-        }
+        }*/
 
         Custom.WSTextHeader {
             Layout.leftMargin: leftMargin
@@ -34,6 +34,7 @@ Page {
         Custom.WSTextButton {
             Layout.topMargin: 20
             Layout.leftMargin: leftMargin
+            width: 300
             header: "Бутылки"
             text: "<ul>
                    <li>Бутылки любых цветов</li>
@@ -46,7 +47,7 @@ Page {
                            "mapPrepareText": "Опустошить, этикетку не снимать, сжать, кидать без пакетов./nКрышки можно снять и сдать на переработку отдельно.",
                            "mapPrepareTextHeight": "70",
                            "ecoPrepareText": "Крышки снять и сложить отдельно, этикетки оставить, сжать, сложить в отдельный пакет (за дополнительную плату можно весь пластик сдать в одном пакете).",
-                           "ecoPrepareTextHeight": "80",
+                           "ecoPrepareTextHeight": "100",
                            "placePrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, этикетки оставить, сжать, сложить в отдельный пакет.",
                            "placePrepareTextHeight": "70",
                            "squirrelPrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, этикетки оставить, сжать, сложить в отдельный пакет.",

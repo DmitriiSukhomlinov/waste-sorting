@@ -10,21 +10,22 @@ Page {
     property Map mapView
 
     property int picSize: 100
+    property int spacingValue: (view.width - picSize * 2) / 3
 
     height: view.height
     width: view.width
 
     title: "Метал: выбор маркировки"
 
-    GridLayout {
-        id: grid
+    Row {
+        spacing: spacingValue
         anchors.fill: parent
-        columns: 3
+        anchors.topMargin: 50
+        anchors.leftMargin: spacingValue
 
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/metal-40.png"
-            pressedImageSource: "../icons/metal-40.png"
-            buttonText: ""
+            releasedImageSource: "../icons/metal/40fe/icon.png"
+            pressedImageSource: "../icons/metal/40fe/icon.png"
             pictureSize: picSize
             textBold: true
             otherImageOnClick: false
@@ -34,9 +35,8 @@ Page {
             }
         }
         Custom.WSPictureButton {
-            releasedImageSource: "../icons/metal-41.png"
-            pressedImageSource: "../icons/metal-41.png"
-            buttonText: ""
+            releasedImageSource: "../icons/metal/41alu/icon.png"
+            pressedImageSource: "../icons/metal/41alu/icon.png"
             pictureSize: picSize
             textBold: true
             otherImageOnClick: false

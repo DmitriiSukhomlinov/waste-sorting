@@ -52,5 +52,6 @@
         <file>icons/plastic/4ldpe/page-icon.png</file>
         <file>icons/plastic/6ps/page-icon.png</file>
         <file>icons/plastic/7other/page-icon.png</file>
+        <file>icons/external_link.png</file>
     </qresource>
 </RCC>

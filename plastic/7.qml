@@ -18,22 +18,17 @@ Page {
 
     ColumnLayout {
 
-        Image {
+        /*Image {
             Layout.leftMargin: leftMargin
             Layout.alignment: Qt.AlignHCenter
             Layout.topMargin: 10
             source: "../icons/plastic/7other/page-icon.png"
-        }
-
-        Custom.WSTextHeader {
-            Layout.topMargin: 30
-            Layout.leftMargin: leftMargin
-            labelText: "Не перерабатывается"
-        }
+        }*/
 
         Label {
+            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Пластик с данной маркировкой не перерабатывается."
+            text: "Пластик с данной маркировкой\nне перерабатывается."
             font.pixelSize: 14
         }
     }

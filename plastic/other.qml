@@ -18,7 +18,7 @@ Page {
 
     ColumnLayout {
         Custom.WSTextHeader {
-            Layout.topMargin: 30
+            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
             labelText: "Без маркировки"
         }
@@ -29,7 +29,7 @@ Page {
                    <li>Крышки</li>
                    <li>Пакеты</li>
                    <li>Строительная стретч-пленка</li>
-                   <li>Воздушно-пузырьковая плёнка (\"пупырка\")</li>
+                   <li>Воздушно-пузырьковая плёнка</li>
                    <li>Пластиковые карты</li>
                    </ul>"
             font.pixelSize: 14

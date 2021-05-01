@@ -19,14 +19,15 @@ Page {
 
     ColumnLayout {
 
-        Image {
+        /*Image {
             Layout.leftMargin: leftMargin
             Layout.alignment: Qt.AlignHCenter
             Layout.topMargin: 10
             source: "../icons/plastic/5pp/page-icon.png"
-        }
+        }*/
 
         Custom.WSTextHeader {
+            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
             labelText: "Принимается"
         }
@@ -52,7 +53,7 @@ Page {
                            "mapPrepareText": "Опустошить, этикетку не снимать, \"кидать\" без пакетов.",
                            "mapPrepareTextHeight": "50",
                            "ecoPrepareText": "Вымыть, высушить, снять или вырезать все бумажные бумажные наклейки, сложить друг в друга / за  дополнительную плату можно весь пластик сдать в одном пакете.",
-                           "ecoPrepareTextHeight": "80",
+                           "ecoPrepareTextHeight": "100",
                            "placePrepareText": "Вымыть, высушить, снять или вырезать все бумажные бумажные наклейки, сложить друг в друга.",
                            "placePrepareTextHeight": "80",
                            "squirrelPrepareText": "Вымыть, высушить, снять или вырезать все бумажные бумажные наклейки, сложить друг в друга.",
@@ -79,9 +80,9 @@ Page {
                            "ecoPrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один 5-PP пакет.",
                            "ecoPrepareTextHeight": "80",
                            "placePrepareText": "Снять или вырезать бумажные наклейки (если маркировка только там, перенести её маркером на пластик), отмыть от грязи и жира, высушить. Сложить все пакеты в один 5-PP пакет.",
-                           "placePrepareTextHeight": "80",
+                           "placePrepareTextHeight": "110",
                            "squirrelPrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один 5-PP пакет (за дополнительную плату можно весь пластик сдать в одном пакете).",
-                           "squirrelPrepareTextHeight": "80",
+                           "squirrelPrepareTextHeight": "130",
                            "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }

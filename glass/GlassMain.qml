@@ -49,7 +49,7 @@ Page {
                            "placePrepareText": "Вымыть, высушить, снять крышки, этикетки оставить, безопасно упаковать.",
                            "placePrepareTextHeight": "60",
                            "squirrelPrepareText": "Вымыть, высушить, снять крышки, этикетки оставить, безопасно упаковать. Битую тару упаковать отдельно.",
-                           "squirrelPrepareTextHeight": "80",
+                           "squirrelPrepareTextHeight": "100",
                            "jsScript": "updatePoints(\"glass\")" })
             }
         }

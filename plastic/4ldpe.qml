@@ -19,14 +19,15 @@ Page {
 
     ColumnLayout {
 
-        Image {
+        /*Image {
             Layout.leftMargin: leftMargin
             Layout.alignment: Qt.AlignHCenter
             Layout.topMargin: 10
             source: "../icons/plastic/4ldpe/page-icon.png"
-        }
+        }*/
 
         Custom.WSTextHeader {
+            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
             labelText: "Принимается"
         }
@@ -48,11 +49,11 @@ Page {
                            "mapPrepareText": "Опустошить, этикетку не снимать, кидать без пакетов.\nКрышки можно снять и сдать на переработку отдельно.",
                            "mapPrepareTextHeight": "80",
                            "ecoPrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, этикетки оставить, сложить в отдельный пакет (за дополнительную плату можно весь пластик сдать в одном пакете).",
-                           "ecoPrepareTextHeight": "80",
+                           "ecoPrepareTextHeight": "100",
                            "placePrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, сжать, этикетки оставить.",
-                           "placePrepareTextHeight": "50",
+                           "placePrepareTextHeight": "60",
                            "squirrelPrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, сжать, этикетки оставить.",
-                           "squirrelPrepareTextHeight": "70",
+                           "squirrelPrepareTextHeight": "80",
                            "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }
@@ -74,11 +75,11 @@ Page {
                            "mapView": mapView,
                            "pageTitle": header,
                            "ecoPrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один (за дополнительную плату можно весь пластик сдать в одном пакете).",
-                           "ecoPrepareTextHeight": "80",
+                           "ecoPrepareTextHeight": "100",
                            "placePrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один.",
-                           "placePrepareTextHeight": "70",
+                           "placePrepareTextHeight": "80",
                            "squirrelPrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один.",
-                           "squirrelPrepareTextHeight": "70",
+                           "squirrelPrepareTextHeight": "100",
                            "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
             }
         }

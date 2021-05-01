@@ -27,56 +27,28 @@ Page {
         Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Алюминиевые банки"
+            width: 300
+            header: "Разное"
+            text: "<ul>
+                   <li>Алюминиевые банки</li>
+                   <li>Фольга</li>
+                   <li>Баллоны под давлением</li>
+                   <li>Одноразовые формы для выпечки</li>
+                   </ul>"
             onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
+                view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
                            "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Алюминиевые банки описание как подготовить.",
+                           "pageTitle": header,
+                           "mapPrepareText": "Опустошить, сжать, кидать без пакетов. Предметы мельче алюминиевой банки сдавать другим способом.",
+                           "mapPrepareTextHeight": "100",
+                           "ecoPrepareText": "Опустошить, сложить в отдельный пакет.",
+                           "ecoPrepareTextHeight": "50",
+                           "placePrepareText": "Вымыть, высушить, сжать или компактно сложить.",
+                           "placePrepareTextHeight": "50",
+                           "squirrelPrepareText": "Вымыть, высушить, сжать или компактно сложить.",
+                           "squirrelPrepareTextHeight": "70",
                            "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Фольга"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Фольга описание как подготовить.",
-                           "jsScript": "updatePoints(\"pete_metall-general\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Баллоны под давлением"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Баллоны под давлением описание как подготовить.",
-                           "jsScript": "updatePoints(\"pete_metall-general\")" })
-            }
-        }
-
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Одноразовые формы для выпечки"
-            onClicked: function() {
-                view.push("../prepare_page/prepare_page.qml",
-                          {"view": view,
-                           "mapView": mapView,
-                           "pageTitle": text,
-                           "howPrepare": "Одноразовые формы для выпечки описание как подготовить.",
-                           "jsScript": "updatePoints(\"pete_metall-general\")" })
             }
         }
 
@@ -89,7 +61,7 @@ Page {
         Label {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Посуда для готовки с покрытием (антипригарное и др.)"
+            text: "Посуда для готовки с покрытием\n(антипригарное и др.)"
             font.pixelSize: 14
         }
 
