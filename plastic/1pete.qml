@@ -18,6 +18,7 @@ Page {
     title: "1 PET/ПЭТ"
 
     ColumnLayout {
+        spacing: 0
 
         /*Image {
             Layout.leftMargin: leftMargin
@@ -27,14 +28,15 @@ Page {
         }*/
 
         Custom.WSTextHeader {
+            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
             labelText: "Принимается"
         }
 
-        Custom.WSTextButton {
+        Custom.WSCategoryTextButton {
             Layout.topMargin: 20
-            Layout.leftMargin: leftMargin
-            width: 300
+            //Layout.leftMargin: leftMargin
+            width: page.width
             header: "Бутылки"
             text: "<ul>
                    <li>Бутылки любых цветов</li>

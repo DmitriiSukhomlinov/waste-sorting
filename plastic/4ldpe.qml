@@ -18,6 +18,7 @@ Page {
     title: "4 LDPE/ПВД"
 
     ColumnLayout {
+        spacing: 0
 
         /*Image {
             Layout.leftMargin: leftMargin
@@ -32,10 +33,9 @@ Page {
             labelText: "Принимается"
         }
 
-        Custom.WSTextButton {
+        Custom.WSCategoryTextButton {
             Layout.topMargin: 20
-            Layout.leftMargin: leftMargin
-            width: 300
+            width: page.width
             header: "Твердый пластик"
             text: "<ul>
                    <li>Флаконы от бытовой химии</li>
@@ -58,10 +58,8 @@ Page {
             }
         }
 
-        Custom.WSTextButton {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            width: 300
+        Custom.WSCategoryTextButton {
+            width: page.width
             header: "Мягкий пластик"
             text: "<ul>
                    <li>Упаковки от бытовой техники</li>

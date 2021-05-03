@@ -5,7 +5,7 @@
         <file>ChooseCathegoryPage.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>custom/WSPictureButton.qml</file>
-        <file>custom/WSTextButton.qml</file>
+        <file>custom/WSPrepareTextButton.qml</file>
         <file>custom/WSTextHeader.qml</file>
         <file>html/placemark.html</file>
         <file>html/placemark.js</file>
@@ -53,5 +53,8 @@
         <file>icons/plastic/6ps/page-icon.png</file>
         <file>icons/plastic/7other/page-icon.png</file>
         <file>icons/external_link.png</file>
+        <file>custom/WSCustomBorder.qml</file>
+        <file>custom/WSCategoryTextButton.qml</file>
+        <file>icons/chevron_right.png</file>
     </qresource>
 </RCC>

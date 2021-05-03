@@ -18,6 +18,7 @@ Page {
     title: "6 PS/ПC"
 
     ColumnLayout {
+        spacing: 0
 
         /*Image {
             Layout.leftMargin: leftMargin
@@ -32,10 +33,9 @@ Page {
             labelText: "Принимается"
         }
 
-        Custom.WSTextButton {
+        Custom.WSCategoryTextButton {
             Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            width: 300
+            width: page.width
             header: "Разное"
             text: "<ul>
                    <li>Лотки из-под яиц</li>

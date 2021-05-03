@@ -6,6 +6,7 @@ import "../custom" as Custom
 import "../"
 
 Page {
+    id: page
     property StackView view
     property Map mapView
 
@@ -17,18 +18,18 @@ Page {
     title: "41 ALU/Алюминий"
 
     ColumnLayout {
+        spacing: 0
 
         Custom.WSTextHeader {
-            Layout.topMargin: 30
-            Layout.leftMargin: leftMargin
-            labelText: "Что можно переработать?"
-        }
-
-        Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            width: 300
-            header: "Разное"
+            labelText: "Принимается"
+        }
+
+        Custom.WSCategoryTextButton {
+            Layout.topMargin: 20
+            width: page.width
+            header: "Алюминиевые предметы"
             text: "<ul>
                    <li>Алюминиевые банки</li>
                    <li>Фольга</li>
@@ -53,22 +54,17 @@ Page {
         }
 
         Custom.WSTextHeader {
-            Layout.topMargin: 30
+            Layout.topMargin: 20
             Layout.leftMargin: leftMargin
-            labelText: "Что нельзя переработать?"
+            labelText: "Не принимается"
         }
 
         Label {
-            Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Посуда для готовки с покрытием\n(антипригарное и др.)"
-            font.pixelSize: 14
-        }
-
-        Label {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Кофейные капсулы"
+            text: "<ul>
+                   <li>Посуда для готовки с покрытием<br>(антипригарное и др.)</li>
+                   <li>Кофейные капсулы</li>
+                   </ul>"
             font.pixelSize: 14
         }
     }

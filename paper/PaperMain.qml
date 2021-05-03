@@ -6,6 +6,7 @@ import "../custom" as Custom
 import "../"
 
 Page {
+    id: page
     property StackView view
     property Map mapView
 
@@ -17,18 +18,18 @@ Page {
     title: "Стекло"
 
     ColumnLayout {
+        spacing: 0
 
         Custom.WSTextHeader {
-            Layout.topMargin: 30
-            Layout.leftMargin: leftMargin
-            labelText: "Что можно переработать?"
-        }
-
-        Custom.WSTextButton {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            width: 300
-            header: "Разное"
+            labelText: "Принимается"
+        }
+
+        Custom.WSCategoryTextButton {
+            Layout.topMargin: 10
+            width: page.width
+            header: "Макулатура"
             text: "<ul>
                    <li>Бумага</li>
                    <li>Картон</li>
@@ -46,6 +47,42 @@ Page {
                            "squirrelPrepareTextHeight": "80",
                            "jsScript": "updatePoints(\"paper_cardboard\")" })
             }
+        }
+
+        Custom.WSCategoryTextButton {
+            width: page.width
+            header: "Пульперкартон и втулки"
+            text: "<ul>
+                   <li>Упаковки от яиц</li>
+                   <li>Втулки от ткани, бумаги, бумажных полотенец</li>
+                   </ul>"
+            onClicked: function() {
+                view.push("../prepare_page/how_2_prep.qml",
+                          {"view": view,
+                           "mapView": mapView,
+                           "pageTitle": header,
+                           "ecoPrepareText": "Упаковки от яиц сложить друг в друга, не рвать, не мять. Втулки можно сминать.\nСложить в отдельный пакет пакет.",
+                           "ecoPrepareTextHeight": "100" })
+            }
+        }
+
+        Custom.WSTextHeader {
+            Layout.topMargin: 20
+            Layout.leftMargin: leftMargin
+            labelText: "Не принимается"
+        }
+
+        Label {
+            Layout.leftMargin: leftMargin
+            text: "<ul>
+                   <li>Ламинированная бумага<br>(проверяется на надрыв)</li>
+                   <li>Чеки, калька, копирка, обои</li>
+                   <li>Подложки от яиц, тетрапаки</li>
+                   <li>\"Бумажные\" стаканчики</li>
+                   <li>Смывающиеся втулки от туалетной бумаги</li>
+                   <li>Отходы с маркировкой C/PAP</li>
+                   </ul>"
+            font.pixelSize: 14
         }
     }
 }

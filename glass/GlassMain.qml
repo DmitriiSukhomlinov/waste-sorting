@@ -20,15 +20,14 @@ Page {
     ColumnLayout {
 
         Custom.WSTextHeader {
-            Layout.leftMargin: leftMargin
             Layout.topMargin: 10
+            Layout.leftMargin: leftMargin
             labelText: "Принимается"
         }
 
-        Custom.WSTextButton {
+        Custom.WSCategoryTextButton {
             Layout.topMargin: 20
-            Layout.leftMargin: leftMargin
-            width: 300
+            width: page.width
             header: "Стеклянные изделия"
             text: "<ul>
                    <li>Бутылки и банки</li>
