@@ -54,7 +54,7 @@ Page {
             header: "Пульперкартон и втулки"
             text: "<ul>
                    <li>Упаковки от яиц</li>
-                   <li>Втулки от ткани, бумаги, бумажных полотенец</li>
+                   <li>Втулки от ткани, бумаги,<br>бумажных полотенец</li>
                    </ul>"
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
@@ -75,7 +75,7 @@ Page {
         Label {
             Layout.leftMargin: leftMargin
             text: "<ul>
-                   <li>Ламинированная бумага<br>(проверяется на надрыв)</li>
+                   <li>Ламинированная бумага >(проверяется на надрыв)</li>
                    <li>Чеки, калька, копирка, обои</li>
                    <li>Подложки от яиц, тетрапаки</li>
                    <li>\"Бумажные\" стаканчики</li>
@@ -83,6 +83,8 @@ Page {
                    <li>Отходы с маркировкой C/PAP</li>
                    </ul>"
             font.pixelSize: 14
+            wrapMode: Text.WordWrap
+            Layout.preferredWidth: page.width - leftMargin
         }
     }
 }

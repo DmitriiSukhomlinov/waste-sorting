@@ -74,6 +74,8 @@ Page {
                    <li>Другое</li>
                    </ul>"
             font.pixelSize: 14
+            wrapMode: Text.WordWrap
+            Layout.preferredWidth: page.width - leftMargin
         }
     }
 }

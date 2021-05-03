@@ -24,6 +24,10 @@ Page {
     property int squirrelPrepareTextHeight: 0
     property alias raccoonPrepareText: raccoon.prepareText
     property int raccoonPrepareTextHeight: 0
+    property alias adressPrepareText: adress.prepareText
+    property int adressPrepareTextHeight: 0
+    property alias servicePrepareText: service.prepareText
+    property int servicePrepareTextHeight: 0
 
     title: pageTitle
 
@@ -103,6 +107,31 @@ Page {
                 onClicked: function() {
                     Qt.openUrlExternally("https://vk.com/pages?oid=-145269495&p=%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B0%20%D0%BF%D1%83%D0%BD%D0%BA%D1%82%D0%BE%D0%B2%20%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%B0%20%D0%BA%D1%80%D1%8B%D1%88%D0%B5%D1%87%D0%B5%D0%BA")
                 }
+            }
+
+            Custom.WSPrepareTextButton {
+                id: adress
+                showExternalLink: true
+                width: parent.width
+                header: "Найти адрес приёма"
+                text: "Адреса приёма отработанных ртутьсодержащих ламп перечислены на сайте."
+                visible: adressPrepareTextHeight != 0
+                onClicked: function() {
+                    Qt.openUrlExternally("http://xn--80aakvgeiqin5a0c.xn--p1ai/rtut")
+                }
+            }
+
+            Custom.WSPrepareTextButton {
+                id: service
+                hasIcon: false
+                clickable: false
+                width: parent.width
+                header: "Сдать в аварийно-спасательную\n  службу"
+                text: "ул. Колыванская, 4\nГрафик работы: пн-вс 10:00 - 17:00"
+                visible: servicePrepareTextHeight != 0
+                /*onClicked: function() {
+                    Qt.openUrlExternally("http://xn--80aakvgeiqin5a0c.xn--p1ai/rtut")
+                }*/
             }
         }
     }

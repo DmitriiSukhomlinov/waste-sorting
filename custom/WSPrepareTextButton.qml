@@ -7,7 +7,9 @@ Rectangle {
     property alias header: header.text
     property alias text: label.text
     property alias prepareText: prepareLabel.text
+    property bool hasIcon: true
     property bool showExternalLink: false
+    property bool clickable: true
     property int leftMargin: 40
     property int offset: 15
 
@@ -28,16 +30,14 @@ Rectangle {
         lBorderwidth: 0
         rBorderwidth: 0
         borderColor: "#d3d3d3"
+
+        Component.onCompleted: function() {
+            if (!clickable) {
+                tBorderwidth = 0
+                bBorderwidth = 0
+            }
+        }
     }
-
-
-
-    /*gradient: Gradient {
-        GradientStop { id: gradientStop; position: 0.0; color: palette.light }
-        GradientStop { position: 1.0; color: palette.button }
-    }
-
-    SystemPalette { id: palette }*/
 
     MouseArea {
         id: mouseArea
@@ -82,6 +82,10 @@ Rectangle {
                     Image {
                         id: externalLink
                         Component.onCompleted: function() {
+                            if (!hasIcon) {
+                                return
+                            }
+
                             if (showExternalLink) {
                                 externalLink.source = "../icons/external_link.png"
                             } else {
@@ -134,7 +138,7 @@ Rectangle {
 
     states: State {
         name: "pressed"
-        when: mouseArea.pressed
+        when: mouseArea.pressed && clickable
         PropertyChanges { target: container; color: "#e6e6e6" }
     }
 }

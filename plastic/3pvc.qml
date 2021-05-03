@@ -6,6 +6,7 @@ import "../custom" as Custom
 import "../"
 
 Page {
+    id: page
     property StackView view
     property Map mapView
 
@@ -28,8 +29,10 @@ Page {
         Label {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
-            text: "Пластик с данной маркировкой\nне перерабатывается."
+            text: "Пластик с данной маркировкой не перерабатывается."
             font.pixelSize: 14
+            wrapMode: Text.WordWrap
+            Layout.preferredWidth: page.width - leftMargin
         }
     }
 }

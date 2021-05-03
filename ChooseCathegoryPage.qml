@@ -55,21 +55,33 @@ Page {
             releasedImageSource: "../icons/e-waste/icon-main.png"
             pressedImageSource: "../icons/e-waste/icon-main.png"
             otherImageOnClick: false
+            onClicked: function() {
+                view.push("e-waste/EWasteMain.qml", {"view": view, "mapView": mapView})
+            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/clothes/icon-main.png"
             pressedImageSource: "../icons/clothes/icon-main.png"
             otherImageOnClick: false
+            onClicked: function() {
+                view.push("clothes/ClothesMain.qml", {"view": view, "mapView": mapView})
+            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/textile/icon-main.png"
             pressedImageSource: "../icons/textile/icon-main.png"
             otherImageOnClick: false
+            onClicked: function() {
+                view.push("textile/TextileMain.qml", {"view": view, "mapView": mapView})
+            }
         }
         Custom.WSPictureButton {
             releasedImageSource: "../icons/danger/icon-main.png"
             pressedImageSource: "../icons/danger/icon-main.png"
             otherImageOnClick: false
+            onClicked: function() {
+                view.push("danger/DangerMain.qml", {"view": view, "mapView": mapView})
+            }
         }
     }
 }

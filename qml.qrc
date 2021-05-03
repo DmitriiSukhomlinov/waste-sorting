@@ -56,5 +56,9 @@
         <file>custom/WSCustomBorder.qml</file>
         <file>custom/WSCategoryTextButton.qml</file>
         <file>icons/chevron_right.png</file>
+        <file>clothes/ClothesMain.qml</file>
+        <file>textile/TextileMain.qml</file>
+        <file>e-waste/EWasteMain.qml</file>
+        <file>danger/DangerMain.qml</file>
     </qresource>
 </RCC>

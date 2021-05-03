@@ -62,7 +62,7 @@ Page {
             }
         }
 
-        Custom.WSPrepareTextButton {
+        Custom.WSCategoryTextButton {
             width: page.width
             header: "Мягкий пластик"
             text: "<ul>
@@ -96,9 +96,11 @@ Page {
             text: "<ul>
                    <li>Отходы с маркировкой C/PP</li>
                    <li>Флаконы от средств \"Чистая линия\"</li>
-                   <li>Фольгированные упаковки (с<br/>отражающими поверхностями)</li>
+                   <li>Фольгированные упаковки (с отражающими поверхностями)</li>
                    </ul>"
             font.pixelSize: 14
+            wrapMode: Text.WordWrap
+            Layout.preferredWidth: page.width - leftMargin
         }
     }
 }

@@ -62,10 +62,12 @@ Page {
         Label {
             Layout.leftMargin: leftMargin
             text: "<ul>
-                   <li>Посуда для готовки с покрытием<br>(антипригарное и др.)</li>
+                   <li>Посуда для готовки с покрытием (антипригарное и др.)</li>
                    <li>Кофейные капсулы</li>
                    </ul>"
             font.pixelSize: 14
+            wrapMode: Text.WordWrap
+            Layout.preferredWidth: page.width - leftMargin
         }
     }
 }

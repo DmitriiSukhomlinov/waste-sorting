@@ -75,6 +75,8 @@ Page {
                    <li>Перфорированные обложки от мяса</li>
                    </ul>"
             font.pixelSize: 14
+            wrapMode: Text.WordWrap
+            Layout.preferredWidth: page.width - leftMargin
         }
     }
 }

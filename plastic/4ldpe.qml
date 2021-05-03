@@ -96,6 +96,8 @@ Page {
                    <li>Тубы от кремов, пасты и т.д.</li>
                    </ul>"
             font.pixelSize: 14
+            wrapMode: Text.WordWrap
+            Layout.preferredWidth: page.width - leftMargin
         }
     }
 }
