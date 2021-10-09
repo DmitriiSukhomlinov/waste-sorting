@@ -1,0 +1,1543 @@
+{
+    "household-chemicals-bottles": {
+        "Color": "#00FF00",
+        "MapData": [
+            {
+                "MapPointAdress": "Новосибирск, 1905 года, 73",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.044645, 82.908509",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 1905 года, 73",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.044645, 82.908509",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 1905 года, 30",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.042721, 82.904817",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 1905 года, 85",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.046393, 82.908994",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 1905 года, 2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.039429, 82.894783",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "с. Верх-Тула, 1-й квартал, 1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.881934, 82.772226",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "с. Верх-Тула, 1-й квартал, 1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.881934, 82.772226",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 1-й Чукотский, 8",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.962706, 82.887713",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 1-я Механическая, 16",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.963574, 83.05524",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 1-я Портовая, 4",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.024801, 82.862192",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 20 Партсъезда, 11",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.967207, 82.957835",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 20 Партсъезда, 10",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.966758, 82.957072",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 20-го Партсъезда, 2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.96838, 82.954197",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 20-го Партсъезда, 6",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.967631, 82.955563",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 20-го Партсъезда, 11",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.967207, 82.957835",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 25-лет Октября ул, 11",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.073273, 82.963198",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 25-лет Октября ул, 28",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.077118, 82.959246",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "с. Верх-Тула, 2-й квартал, 6",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.884037, 82.776025",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "с. Верх-Тула, 2-й квартал, 6",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.884037, 82.776025",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 2-й пер. Крашенинникова, 6",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.983143, 82.865965",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 2-я Миргородская, 7",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.853636, 83.039834",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 2-я Миргородская, 9",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.854372, 83.039331",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 4",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.964721, 82.849795",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 3",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.965119, 82.850657",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.965497, 82.851951",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 15",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.966949, 82.84631",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 25",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.968954, 82.843489",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 26",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.969936, 82.844558",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 12",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.967528, 82.848753",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 16",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.966189, 82.843866",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 15",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.966949, 82.84631",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 22",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.969574, 82.84595",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, 9-й Гвардейской дивизии, 7",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.965755, 82.850038",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Абаканская, 16а",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.862679, 82.966325",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "г.Обь  (Обь городской округ), Авиационная, 8",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.99932, 82.709002",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Александрийская, 87",
+                "MapPointCathegory": "ИЖД",
+                "MapPointCoordinates": "54.858191, 83.139592",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Амурская, 65/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.979196, 82.842923",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Амурская, 40/3",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.97994, 82.850648",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Амурский 2-й переулок, 31",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.978291, 82.817698",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аникина, 31",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.96422, 82.949885",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аникина, 35/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.964701, 82.949086",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аникина, 19",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.967605, 82.953173",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "г.Обь  (Обь городской округ), Арсенальная, 1А",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.001406, 82.703397",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аэропорт, 5",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.079396, 82.906012",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аэропорт, 19",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.076669, 82.905715",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аэропорт, 45",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.076009, 82.908392",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аэропорт, 54",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.078803, 82.903263",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аэропорт, 55",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.078184, 82.909677",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аэропорт, 56",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.075525, 82.909803",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аэропорт, 58",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.076767, 82.910297",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Аэропорт, 1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.081555, 82.902275",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Балтийская, 33",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.855216, 83.05188",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Балтийская, 35",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.856134, 83.051134",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Балтийская, 31",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.855812, 83.050003",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Барьерная, 18",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.864176, 82.978425",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Барьерная, 18",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.864176, 82.978425",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Барьерная, 4",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.863927, 82.988953",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Барьерная, 13",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.863244, 82.983833",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Барьерная, 7",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.862585, 82.987399",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Баумана, 3/4",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.974587, 83.075766",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Баумана, 3/4",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.974587, 83.075766",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Беловежская, 8",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.965011, 82.892357",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "пос. Элитный, Новосибирский район, Новосибирская область, Беломорская, 11",
+                "MapPointCathegory": "ИЖД",
+                "MapPointCoordinates": "54.913831, 82.950882",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бердышева, 5",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.862554, 82.969163",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "дп. Кудряшовский, Новосибирский район, Новосибирская область, Береговая, 1/2",
+                "MapPointCathegory": "ИЖД",
+                "MapPointCoordinates": "55.097795, 82.777265",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "дп. Кудряшовский, Новосибирский район, Новосибирская область, Береговая, 122/2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.075252, 82.777696",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "пос. Мичуринский, Новосибирский район, Новосибирская область, Береговой квартал  (Мичуринец), 4",
+                "MapPointCathegory": "ИЖД",
+                "MapPointCoordinates": "54.883188, 83.014798",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Березовая, 15",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.937195, 83.109229",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Березовая, 5/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.937303, 83.116927",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Березовая, 3",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.936864, 83.122847",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Березовая, 11",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.936802, 83.112597",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Березовая, 13",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.937262, 83.11081",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Березовая, 15",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.937195, 83.109229",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Березовая, 5/2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.937712, 83.116568",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Березовая, 19",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.936967, 83.104773",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бестужева, 64",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.080478, 82.880347",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бетонная, 5",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.963, 82.905733",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бетонная, 7",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.963005, 82.908734",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бетонная, 21",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.962473, 82.914716",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бетонная, 4а",
+                "MapPointCathegory": "ЮЛ",
+                "MapPointCoordinates": "54.955872, 82.909515",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск (Ельцовка), Благовещенская, 5/1",
+                "MapPointCathegory": "ИЖД",
+                "MapPointCoordinates": "54.903127, 83.108438",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 67",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.991201, 82.900846",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 71Б",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.992337, 82.902975",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 7",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.983918, 82.889393",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 13",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.98446, 82.890318",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 45",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.988489, 82.896283",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 37",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.987637, 82.894837",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 16",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.986811, 82.896355",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 6",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.985328, 82.894783",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 61/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.99054, 82.898574",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 69",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.991645, 82.900164",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 50",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.99273, 82.908096",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 38",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.99147, 82.904017",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 32/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.990008, 82.901637",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 17/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.985349, 82.888836",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Блюхера, 28",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.9882, 82.898484",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 2/2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.065133, 82.937129",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 3",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.066612, 82.935072",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 4",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.066045, 82.936438",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 8",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.06704, 82.937812",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 10/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.067365, 82.939222",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 14/2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.068504, 82.942016",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 17",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.069638, 82.940956",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 18/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.06953, 82.94384",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 57/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.080679, 82.961483",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 33/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.073901, 82.948259",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 5",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.066819, 82.935899",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 11",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.068468, 82.939115",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 46",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.075772, 82.955688",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 49",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.078525, 82.958563",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 29",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.072788, 82.947352",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 64",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.079488, 82.961932",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Богдана Хмельницкого, 138",
+                "MapPointCathegory": "ЮЛ",
+                "MapPointCoordinates": "55.112154, 82.988495",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "г.Обь  (Обь городской округ), Большая, 39",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.982957, 82.682044",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "г.Обь  (Обь городской округ), Большая, 25",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.98227, 82.684649",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Большая, 680",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.034054, 82.806541",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Большая, 630",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.029998, 82.807682",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Большая, 612",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.028997, 82.810323",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Большая, 270",
+                "MapPointCathegory": "ЮЛ",
+                "MapPointCoordinates": "55.00959, 82.864842",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Большая, 616",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.029141, 82.80929",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Большая, 624",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.03024, 82.809299",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Большая, 258",
+                "MapPointCathegory": "ЮЛ",
+                "MapPointCoordinates": "55.007225, 82.874445",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бородина, 15",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.932317, 82.868651",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бородина, 9",
+                "MapPointCathegory": "ИЖД",
+                "MapPointCoordinates": "54.932167, 82.866234",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Котеджный поселок Горки Академпарка, б-р Леонардо да Винчи, 2",
+                "MapPointCathegory": "мкд и юл",
+                "MapPointCoordinates": "54.842263, 83.18201",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бульвар молодежи, 42",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.864985, 83.094119",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бульвар молодежи, 44",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.864057, 83.095646",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бульвар молодежи, 46",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.863523, 83.095951",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бурденко, 19",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.96605, 82.907341",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бурденко, 9",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.966448, 82.902284",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бурденко, 23",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.965941, 82.909075",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бурденко, 27",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.965807, 82.911509",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бурденко, 49",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.965347, 82.918849",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бурденко 2-ая, 16",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.966515, 82.919145",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Бурденко 3-ий пер, 4",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.966101, 82.914213",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вавилова, 7/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.055511, 82.894693",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вавилова, 7/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.055511, 82.894693",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 4",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.99131, 82.881182",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 33",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.981975, 82.899247",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 12",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.988856, 82.885395",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 11/2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.98883, 82.888647",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 13",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.987921, 82.888674",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 17/1",
+                "MapPointCathegory": "ЮЛ",
+                "MapPointCoordinates": "54.986619, 82.891279",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 19",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.985953, 82.892124",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 35",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.982208, 82.900164",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 49/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.980343, 82.904449",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 30",
+                "MapPointCathegory": "ЮЛ",
+                "MapPointCoordinates": "54.979666, 82.90117",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 16/2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.986909, 82.886653",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 4",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.99131, 82.881182",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ватутина, 79",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.978147, 82.909605",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вересаева, 1/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.954445, 83.109148",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вертковская, 2",
+                "MapPointCathegory": "ЮЛ",
+                "MapPointCoordinates": "54.978529, 82.900496",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вертковская, 10/2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.977795, 82.89224",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вертковская, 8",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.976896, 82.894307",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вертковская, 10/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.977759, 82.891387",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вертковская, 5/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.975414, 82.891387",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вертковская, 14",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.976313, 82.888593",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вертковская, 14/2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.977615, 82.888845",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вертковская, 22",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.976075, 82.883877",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.5"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вертковская, 18",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.976189, 82.88633",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Вертковская, 19",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.975078, 82.888315",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "пос. Юный Ленинец, Новосибирский район, Новосибирская область, Весенняя  (Юн.Ленинец), 1а",
+                "MapPointCathegory": "ИЖД",
+                "MapPointCoordinates": "54.887481, 83.003308",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ветлужская, 10",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.853294, 82.974517",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ветлужская, 13",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.853558, 82.972747",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Ветлужская, 18",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.854372, 82.973277",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Виктора Уса, 3",
+                "MapPointCathegory": "",
+                "MapPointCoordinates": "54.940567, 82.883904",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Виктора Уса, 4",
+                "MapPointCathegory": "",
+                "MapPointCoordinates": "54.941136, 82.881811",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Виктора Уса, 5",
+                "MapPointCathegory": "",
+                "MapPointCoordinates": "54.93962, 82.883724",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Виктора Уса, 13",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.935746, 82.882988",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Виктора Уса, 15/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.9351, 82.884192",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Виктора Уса, 15",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.935581, 82.88527",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Виктора Уса, 7/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.938689, 82.884704",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Виктора Уса, 7",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.938353, 82.883491",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Виноградова, 5",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.976772, 83.085351",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 21",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.038568, 82.887659",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 21",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.038568, 82.887659",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 7",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.033682, 82.890219",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 3",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.032346, 82.891737",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 13",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.036133, 82.889402",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 16",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.037072, 82.889977",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 28",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.043933, 82.885359",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 33",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.040822, 82.885314",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 12",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.035503, 82.89092",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 9",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.034539, 82.8903",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 1/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.030865, 82.892438",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 21",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.038568, 82.887659",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировская, 1/2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.029358, 82.89454",
+                "MapPointQuantity": "1",
+                "MapPointType": "Сетка",
+                "MapPointVolume": "2.6"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировский спуск, 2",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.034745, 82.892411",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировский спуск, 9",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.033037, 82.888036",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "Новосибирск, Владимировский спуск, 9/1",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "55.032779, 82.888818",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "р.п. Краснообск, Военный городок, 4",
+                "MapPointCathegory": "ИЖД",
+                "MapPointCoordinates": "54.921256, 82.991208",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            },
+            {
+                "MapPointAdress": "г.Обь  (Обь городской округ), Военный городок, 104",
+                "MapPointCathegory": "МКД",
+                "MapPointCoordinates": "54.999356, 82.695132",
+                "MapPointQuantity": "1",
+                "MapPointType": "Бак",
+                "MapPointVolume": "1.9"
+            }
+        ]
+    }
+}
