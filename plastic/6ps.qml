@@ -8,7 +8,6 @@ import "../"
 Page {
     id: page
     property StackView view
-    property Map mapView
 
     property int leftMargin: 40
 
@@ -48,7 +47,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "mapPrepareText": "Опустошить, этикетку не снимать, сжать, кидать без пакетов.",
                            "mapPrepareTextHeight": "50",
@@ -58,7 +56,7 @@ Page {
                            "placePrepareTextHeight": "70",
                            "squirrelPrepareText": "Вымыть, высушить, снять или вырезать бумажные наклейки, сложить друг в друга.",
                            "squirrelPrepareTextHeight": "80",
-                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
+                           "pointsType": "hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans" })
             }
         }
 

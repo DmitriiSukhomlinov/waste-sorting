@@ -8,7 +8,6 @@ import "../"
 Page {
     id: page
     property StackView view
-    property Map mapView
 
     property int leftMargin: 40
 
@@ -37,7 +36,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "ecoPrepareText": "Сложить отдельно.",
                            "ecoPrepareTextHeight": "70",
@@ -60,7 +58,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "adressPrepareText": "Предварительно позвонить в пункт приёма и уточнить актуальность информации.",
                            "adressPrepareTextHeight": "90" })
@@ -76,7 +73,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "servicePrepareText": "Упаковать во избежание повреждений.",
                            "servicePrepareTextHeight": "70" })

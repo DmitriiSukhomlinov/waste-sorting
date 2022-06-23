@@ -8,7 +8,6 @@ import "../"
 Page {
     id: page
     property StackView view
-    property Map mapView
 
     property int leftMargin: 40
 
@@ -40,7 +39,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "raccoonPrepareText": "Вымыть от жира и грязи, убрать бумажные наклейки, снять металлические части.\nС крышек от кулера снять наклейку и вкладыш, сложить отдельно.\nОтдельно сложить горлышки от тетрапаков (со следами клея).\nСортировать крышки по цветам не нужно.",
                            "raccoonPrepareTextHeight": "130" })
@@ -58,7 +56,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "ecoPrepareText": "Вымыть, высушить, снять или срезать бумажные наклейки. Сложить в один из пакетов.",
                            "ecoPrepareTextHeight": "80",

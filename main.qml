@@ -38,17 +38,8 @@ ApplicationWindow {
             height: stackView.height
             width: stackView.width
             view: stackView
-            mapView: mapView
             //mainStack: stackView
         }
-
-        Map {
-            id: mapView
-            view: stackView
-            pageUrl: htmlUrl
-            visible: false
-        }
-
 
         anchors.fill: parent
     }

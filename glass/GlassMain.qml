@@ -8,7 +8,6 @@ import "../"
 Page {
     id: page
     property StackView view
-    property Map mapView
 
     property int leftMargin: 40
 
@@ -39,7 +38,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "mapPrepareText": "Опустошить, этикетку не снимать, кидать без пакетов.",
                            "mapPrepareTextHeight": "50",
@@ -49,7 +47,7 @@ Page {
                            "placePrepareTextHeight": "60",
                            "squirrelPrepareText": "Вымыть, высушить, снять крышки, этикетки оставить, безопасно упаковать. Битую тару упаковать отдельно.",
                            "squirrelPrepareTextHeight": "100",
-                           "jsScript": "updatePoints(\"glass\")" })
+                           "pointsType": "glass" })
             }
         }
 

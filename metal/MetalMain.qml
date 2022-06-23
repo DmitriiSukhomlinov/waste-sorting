@@ -7,7 +7,6 @@ import ".."
 
 Page {
     property StackView view
-    property Map mapView
 
     property int picSize: 100
     property int spacingValue: (view.width - picSize * 2) / 3
@@ -31,7 +30,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("40fe.qml", {"view": view, "mapView": mapView})
+                view.push("40fe.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -42,7 +41,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("41alu.qml", {"view": view, "mapView": mapView})
+                view.push("41alu.qml", {"view": view})
             }
         }
     }

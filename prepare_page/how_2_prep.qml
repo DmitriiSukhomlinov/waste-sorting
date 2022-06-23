@@ -4,15 +4,15 @@ import QtQuick.Layouts 1.12
 
 import "../custom" as Custom
 import "../"
+import "../html/placemark.js" as PlacemarkScript
 
 Page {
     property StackView view
-    property Map mapView
 
     property int leftMargin: 40
     property string pageTitle: ""
     property string howPrepare: ""
-    property string jsScript: ""
+    property string pointsType: ""
 
     property alias mapPrepareText: map.prepareText
     property int mapPrepareTextHeight: 0
@@ -56,8 +56,9 @@ Page {
                 text: "Вторсырье лучше отнести в ближайший подходящий контейнер. Это снизит нагрузку на волонтеров организаций."
                 visible: mapPrepareTextHeight != 0
                 onClicked: function() {
-                    view.push(mapView)
-                    mapView.web.runJavaScript(jsScript)
+                    view.push("../Map.qml",
+                              {"view": view,
+                               pageUrl: "https://dmitriisukhomlinov.github.io?" + pointsType})
                 }
             }
 

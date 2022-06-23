@@ -8,7 +8,6 @@ import "../"
 Page {
     id: page
     property StackView view
-    property Map mapView
 
     property int leftMargin: 40
 
@@ -44,7 +43,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "mapPrepareText": "Опустошить, этикетку не снимать, кидать без пакетов.\nКрышки можно снять и сдать на переработку отдельно.",
                            "mapPrepareTextHeight": "80",
@@ -54,7 +52,7 @@ Page {
                            "placePrepareTextHeight": "60",
                            "squirrelPrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, сжать, этикетки оставить.",
                            "squirrelPrepareTextHeight": "80",
-                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
+                           "pointsType": "hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans" })
             }
         }
 
@@ -70,7 +68,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "ecoPrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один (за дополнительную плату можно весь пластик сдать в одном пакете).",
                            "ecoPrepareTextHeight": "100",
@@ -78,7 +75,7 @@ Page {
                            "placePrepareTextHeight": "80",
                            "squirrelPrepareText": "Снять или вырезать бумажные наклейки, отмыть от грязи и жира, высушить. Сложить все пакеты в один.",
                            "squirrelPrepareTextHeight": "100",
-                           "jsScript": "updatePoints(\"hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans\")" })
+                           "pointsType": "hdpe_ldpe_pp_ps_fe-cans_alu-aluminum-cans" })
             }
         }
 

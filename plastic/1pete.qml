@@ -8,7 +8,6 @@ import "../"
 Page {
     id: page
     property StackView view
-    property Map mapView
 
     property int leftMargin: 40
 
@@ -44,7 +43,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "mapPrepareText": "Опустошить, этикетку не снимать, сжать, кидать без пакетов./nКрышки можно снять и сдать на переработку отдельно.",
                            "mapPrepareTextHeight": "70",
@@ -54,7 +52,7 @@ Page {
                            "placePrepareTextHeight": "70",
                            "squirrelPrepareText": "Вымыть, высушить, крышки снять и сложить отдельно, этикетки оставить, сжать, сложить в отдельный пакет.",
                            "squirrelPrepareTextHeight": "80",
-                           "jsScript": "updatePoints(\"pete_metall-general\")" })
+                           "pointsType": "pete_metall-general" })
             }
         }
 

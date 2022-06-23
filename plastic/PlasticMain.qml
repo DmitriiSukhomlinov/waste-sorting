@@ -7,7 +7,6 @@ import ".."
 
 Page {
     property StackView view
-    property Map mapView
 
     property int picSize: 100
 
@@ -29,7 +28,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("1pete.qml", {"view": view, "mapView": mapView})
+                view.push("1pete.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -40,7 +39,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("2hdpe.qml", {"view": view, "mapView": mapView})
+                view.push("2hdpe.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -51,7 +50,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("3pvc.qml", {"view": view, "mapView": mapView})
+                view.push("3pvc.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -62,7 +61,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("4ldpe.qml", {"view": view, "mapView": mapView})
+                view.push("4ldpe.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -73,7 +72,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("5pp.qml", {"view": view, "mapView": mapView})
+                view.push("5pp.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -84,7 +83,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("6ps.qml", {"view": view, "mapView": mapView})
+                view.push("6ps.qml", {"view": view})
             }
         }
 
@@ -96,7 +95,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("7.qml", {"view": view, "mapView": mapView})
+                view.push("7.qml", {"view": view})
             }
         }
 
@@ -108,7 +107,7 @@ Page {
             otherImageOnClick: false
 
             onClicked: function() {
-                view.push("other.qml", {"view": view, "mapView": mapView})
+                view.push("other.qml", {"view": view})
             }
         }
     }

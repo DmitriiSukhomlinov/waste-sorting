@@ -5,6 +5,7 @@
 #include <QQmlContext>
 #include <QQmlEngine>
 #include <QStandardPaths>
+#include <QtWebEngine>
 
 #if defined(Q_OS_ANDROID)
 #include <QtAndroid>
@@ -21,11 +22,13 @@ static const QString DATA_URL = "https://raw.githubusercontent.com/DmitriiSukhom
 int main(int argc, char *argv[])
 {
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
 #endif
 
     QGuiApplication app(argc, argv);
     app.setApplicationName("Waste sorting");
+
+    QtWebEngine::initialize();
 
     QQmlApplicationEngine engine;
 

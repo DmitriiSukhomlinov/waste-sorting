@@ -7,7 +7,6 @@ import "../"
 
 Page {
     property StackView view
-    property Map mapView
 
     property int leftMargin: 40
     property string pageTitle: ""
@@ -55,8 +54,8 @@ Page {
         }
 
         onClicked: function() {
-            view.push(mapView)
-            mapView.web.runJavaScript(jsScript)
+            //view.push(mapView)
+            //mapView.web.runJavaScript(jsScript)
         }
 
         MouseArea {

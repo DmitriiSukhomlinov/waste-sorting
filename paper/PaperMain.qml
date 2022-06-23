@@ -8,7 +8,6 @@ import "../"
 Page {
     id: page
     property StackView view
-    property Map mapView
 
     property int leftMargin: 40
 
@@ -37,7 +36,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "mapPrepareText": "Опустошить, сжать, кидать без пакетов.Предметы мельче алюминиевой банки сдавать другим способом.",
                            "mapPrepareTextHeight": "100",
@@ -45,7 +43,7 @@ Page {
                            "ecoPrepareTextHeight": "100",
                            "squirrelPrepareText": "Сложить в пачки, коробки или пакеты. Перевязать крест-накрест, чтобы не рассыпались.",
                            "squirrelPrepareTextHeight": "80",
-                           "jsScript": "updatePoints(\"paper_cardboard\")" })
+                           "pointsType": "paper_cardboard" })
             }
         }
 
@@ -59,7 +57,6 @@ Page {
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
-                           "mapView": mapView,
                            "pageTitle": header,
                            "ecoPrepareText": "Упаковки от яиц сложить друг в друга, не рвать, не мять. Втулки можно сминать.\nСложить в отдельный пакет пакет.",
                            "ecoPrepareTextHeight": "100" })

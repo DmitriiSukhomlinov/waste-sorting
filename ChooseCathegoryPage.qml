@@ -6,7 +6,6 @@ import "custom" as Custom
 
 Page {
     property StackView view
-    property Map mapView
     id: page
 
     title: "Выбор категории"
@@ -23,7 +22,7 @@ Page {
             pressedImageSource: "../icons/paper/icon-main.png"
             otherImageOnClick: false
             onClicked: function() {
-                view.push("paper/PaperMain.qml", {"view": view, "mapView": mapView})
+                view.push("paper/PaperMain.qml", {"view": view})
             }
         }
 
@@ -32,7 +31,7 @@ Page {
             pressedImageSource: "../icons/plastic/icon-main.png"
             otherImageOnClick: false
             onClicked: function() {
-                view.push("plastic/PlasticMain.qml", {"view": view, "mapView": mapView})
+                view.push("plastic/PlasticMain.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -40,7 +39,7 @@ Page {
             pressedImageSource: "../icons/glass/icon-main.png"
             otherImageOnClick: false
             onClicked: function() {
-                view.push("glass/GlassMain.qml", {"view": view, "mapView": mapView})
+                view.push("glass/GlassMain.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -48,7 +47,7 @@ Page {
             pressedImageSource: "../icons/metal/icon-main.png"
             otherImageOnClick: false
             onClicked: function() {
-                view.push("metal/MetalMain.qml", {"view": view, "mapView": mapView})
+                view.push("metal/MetalMain.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -56,7 +55,7 @@ Page {
             pressedImageSource: "../icons/e-waste/icon-main.png"
             otherImageOnClick: false
             onClicked: function() {
-                view.push("e-waste/EWasteMain.qml", {"view": view, "mapView": mapView})
+                view.push("e-waste/EWasteMain.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -64,7 +63,7 @@ Page {
             pressedImageSource: "../icons/clothes/icon-main.png"
             otherImageOnClick: false
             onClicked: function() {
-                view.push("clothes/ClothesMain.qml", {"view": view, "mapView": mapView})
+                view.push("clothes/ClothesMain.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -72,7 +71,7 @@ Page {
             pressedImageSource: "../icons/textile/icon-main.png"
             otherImageOnClick: false
             onClicked: function() {
-                view.push("textile/TextileMain.qml", {"view": view, "mapView": mapView})
+                view.push("textile/TextileMain.qml", {"view": view})
             }
         }
         Custom.WSPictureButton {
@@ -80,7 +79,7 @@ Page {
             pressedImageSource: "../icons/danger/icon-main.png"
             otherImageOnClick: false
             onClicked: function() {
-                view.push("danger/DangerMain.qml", {"view": view, "mapView": mapView})
+                view.push("danger/DangerMain.qml", {"view": view})
             }
         }
     }
