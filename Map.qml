@@ -4,7 +4,6 @@ import QtWebView 1.1
 
 Page {
     property StackView view
-    property alias web: webView
     property alias pageUrl: webView.url
 
     height: view.height

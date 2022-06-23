@@ -4,7 +4,6 @@ import QtQuick.Layouts 1.12
 
 import "../custom" as Custom
 import "../"
-import "../html/placemark.js" as PlacemarkScript
 
 Page {
     property StackView view

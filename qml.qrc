@@ -7,8 +7,6 @@
         <file>custom/WSPictureButton.qml</file>
         <file>custom/WSPrepareTextButton.qml</file>
         <file>custom/WSTextHeader.qml</file>
-        <file>html/placemark.html</file>
-        <file>html/placemark.js</file>
         <file>plastic/2hdpe.qml</file>
         <file>plastic/PlasticMain.qml</file>
         <file>prepare_page/prepare_page.qml</file>
