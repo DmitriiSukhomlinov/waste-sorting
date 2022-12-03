@@ -19,13 +19,6 @@ Page {
     ColumnLayout {
         spacing: 0
 
-        /*Image {
-            Layout.leftMargin: leftMargin
-            Layout.alignment: Qt.AlignHCenter
-            Layout.topMargin: 10
-            source: "../icons/plastic/4ldpe/page-icon.png"
-        }*/
-
         Custom.WSTextHeader {
             Layout.topMargin: 10
             Layout.leftMargin: leftMargin
@@ -85,16 +78,14 @@ Page {
             labelText: "Не принимается"
         }
 
-        Label {
+        Custom.WSNoClickTextButton {
             Layout.leftMargin: leftMargin
-            text: "<ul>
-                   <li>Отходы с маркировкой C/LDPE</li>
-                   <li>Упаковки от влажных салфеток</li>
-                   <li>Тубы от кремов, пасты и т.д.</li>
-                   </ul>"
-            font.pixelSize: 14
-            wrapMode: Text.WordWrap
             Layout.preferredWidth: page.width - leftMargin
+            labelText: "<ul>
+                        <li>Отходы с маркировкой C/LDPE</li>
+                        <li>Упаковки от влажных салфеток</li>
+                        <li>Тубы от кремов, пасты и т.д.</li>
+                        </ul>"
         }
     }
 }

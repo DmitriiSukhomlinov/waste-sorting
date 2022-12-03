@@ -11,7 +11,7 @@ Rectangle {
     property bool showExternalLink: false
     property bool clickable: true
     property int leftMargin: 40
-    property int offset: 15
+    property int offset: 30
 
     signal clicked
 
@@ -69,27 +69,32 @@ Rectangle {
                     spacing: 10
 
                     Text {
+                        wrapMode: Text.WordWrap
                         id: header
                         x: 10
-                        font.pixelSize: 18
+                        font.pixelSize: 54
                         font.bold: true
                         color: "#33cccc"
                         Component.onCompleted: function() {
                             text = "  "+ text
+                            width = Math.min(width, container.parent.width - 200)
                         }
                     }
 
                     Image {
                         id: externalLink
+                        height: parent.height
+                        width: height
                         Component.onCompleted: function() {
                             if (!hasIcon) {
+                                width = container.parent.width - 70
                                 return
                             }
 
                             if (showExternalLink) {
-                                externalLink.source = "../icons/external_link.png"
+                                source = "../icons/external_link.png"
                             } else {
-                                externalLink.source = "../icons/chevron_right.png"
+                                source = "../icons/chevron_right.png"
                             }
                         }
                     }
@@ -98,7 +103,7 @@ Rectangle {
                 Text {
                     id: label
                     x: 10
-                    font.pixelSize: 14
+                    font.pixelSize: 42
                     wrapMode: Text.WordWrap
                     width: container.parent.width - 70
                 }
@@ -110,7 +115,7 @@ Rectangle {
                 Text {
                     id: prepareHeader
                     x: 10
-                    font.pixelSize: 16
+                    font.pixelSize: 50
                     color: "#216184"
                     text: "Подготовка"
                 }
@@ -118,7 +123,7 @@ Rectangle {
                 Text {
                     id: prepareLabel
                     x: 10
-                    font.pixelSize: 14
+                    font.pixelSize: 42
                     wrapMode: Text.WordWrap
                     width: container.parent.width - 100
                 }

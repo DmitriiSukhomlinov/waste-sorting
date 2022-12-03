@@ -58,5 +58,6 @@
         <file>textile/TextileMain.qml</file>
         <file>e-waste/EWasteMain.qml</file>
         <file>danger/DangerMain.qml</file>
+        <file>custom/WSNoClickTextButton.qml</file>
     </qresource>
 </RCC>

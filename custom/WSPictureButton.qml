@@ -57,13 +57,17 @@ Item {
     property string releasedImageSource: ""
     property string pressedImageSource: ""
     property string buttonText: ""
-    property int pictureSize: 130
+    required property int pictureSize
     property bool textBold: false
     property bool otherImageOnClick: true
 
     id: button
-    width: pictureSize
-    height: pictureSize
+    //width: pictureSize
+    //height: pictureSize
+    //Layout.preferredWidth: parent.width * 0.4
+    //Layout.preferredHeight: parent.width * 0.4
+    Layout.preferredWidth: pictureSize
+    Layout.preferredHeight: pictureSize
     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
     property alias text: innerText.text
     signal clicked

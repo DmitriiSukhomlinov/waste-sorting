@@ -18,20 +18,11 @@ Page {
 
     ColumnLayout {
 
-        /*Image {
+        Custom.WSNoClickTextButton {
+            Layout.topMargin: 20
             Layout.leftMargin: leftMargin
-            Layout.alignment: Qt.AlignHCenter
-            Layout.topMargin: 10
-            source: "../icons/plastic/3pvc/page-icon.png"
-        }*/
-
-        Label {
-            Layout.topMargin: 10
-            Layout.leftMargin: leftMargin
-            text: "Пластик с данной маркировкой не перерабатывается."
-            font.pixelSize: 14
-            wrapMode: Text.WordWrap
             Layout.preferredWidth: page.width - leftMargin
+            labelText:"Пластик с данной маркировкой не перерабатывается."
         }
     }
 }

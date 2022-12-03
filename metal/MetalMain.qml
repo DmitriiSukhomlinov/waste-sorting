@@ -8,24 +8,20 @@ import ".."
 Page {
     property StackView view
 
-    property int picSize: 100
-    property int spacingValue: (view.width - picSize * 2) / 3
-
     height: view.height
     width: view.width
 
     title: "Метал: выбор маркировки"
 
-    Row {
-        spacing: spacingValue
+    GridLayout {
+        id: grid
         anchors.fill: parent
-        anchors.topMargin: 50
-        anchors.leftMargin: spacingValue
+        columns: 2
 
         Custom.WSPictureButton {
             releasedImageSource: "../icons/metal/40fe/icon.png"
             pressedImageSource: "../icons/metal/40fe/icon.png"
-            pictureSize: picSize
+            pictureSize: parent.width * 0.4
             textBold: true
             otherImageOnClick: false
 
@@ -36,7 +32,7 @@ Page {
         Custom.WSPictureButton {
             releasedImageSource: "../icons/metal/41alu/icon.png"
             pressedImageSource: "../icons/metal/41alu/icon.png"
-            pictureSize: picSize
+            pictureSize: parent.width * 0.4
             textBold: true
             otherImageOnClick: false
 

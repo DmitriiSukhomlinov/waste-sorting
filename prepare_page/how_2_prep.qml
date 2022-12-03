@@ -6,6 +6,8 @@ import "../custom" as Custom
 import "../"
 
 Page {
+    id: page
+
     property StackView view
 
     property int leftMargin: 40
@@ -50,7 +52,7 @@ Page {
             Custom.WSPrepareTextButton {
                 id: map
                 Layout.topMargin: 20
-                width: parent.width
+                width: page.width
                 header: "Найти контейнер"
                 text: "Вторсырье лучше отнести в ближайший подходящий контейнер. Это снизит нагрузку на волонтеров организаций."
                 visible: mapPrepareTextHeight != 0
@@ -64,7 +66,7 @@ Page {
             Custom.WSPrepareTextButton {
                 id: eco
                 showExternalLink: true
-                width: parent.width
+                width: page.width
                 header: "Заказать экотакси"
                 text: "Вторсырье могут забрать у вашего дома в один из дней выезда, устанавливаемых организацией. Стоимость услуги зависит от региона. Узнать стоимость и оставить заявку можно в группе организации."
                 visible: ecoPrepareTextHeight != 0
@@ -76,7 +78,7 @@ Page {
             Custom.WSPrepareTextButton {
                 id: place
                 showExternalLink: true
-                width: parent.width
+                width: page.width
                 header: "Отнести в пункт приема"
                 text: "Экоцентр ProZero (Восход 1)\nГрафик работы: сб, вс с 12:00 до 20:00"
                 visible: placePrepareTextHeight != 0
@@ -88,7 +90,7 @@ Page {
             Custom.WSPrepareTextButton {
                 id: squirrel
                 showExternalLink: true
-                width: parent.width
+                width: page.width
                 header: "Сдать на акции \"Зеленая белка\""
                 text: "Предварительно разобранное вторсырье можно сдать на одной из точек сбора в день проведения акции. Расписание и расположение точек указано в группе акции."
                 visible: squirrelPrepareTextHeight != 0
@@ -100,7 +102,7 @@ Page {
             Custom.WSPrepareTextButton {
                 id: raccoon
                 showExternalLink: true
-                width: parent.width
+                width: page.width
                 header: "Найти адрес партнёра акции\n  \"Крышки Енота\""
                 text: "Пластиковые крышки можно отнести в один из пунктов приёма, организованных партнёрами акции \"Крышки Енота\". Адреса пунктов указаны в группе."
                 visible: raccoonPrepareTextHeight != 0
@@ -112,7 +114,7 @@ Page {
             Custom.WSPrepareTextButton {
                 id: adress
                 showExternalLink: true
-                width: parent.width
+                width: page.width
                 header: "Найти адрес приёма"
                 text: "Адреса приёма отработанных ртутьсодержащих ламп перечислены на сайте."
                 visible: adressPrepareTextHeight != 0
@@ -125,9 +127,9 @@ Page {
                 id: service
                 hasIcon: false
                 clickable: false
-                width: parent.width
-                header: "Сдать в аварийно-спасательную\n  службу"
-                text: "ул. Колыванская, 4\nГрафик работы: пн-вс 10:00 - 17:00"
+                width: page.width
+                header: "Сдать в аварийно-спасательную службу"
+                text: "ул. Колыванская, 4. График работы: пн-вс 10:00 - 17:00"
                 visible: servicePrepareTextHeight != 0
                 /*onClicked: function() {
                     Qt.openUrlExternally("http://xn--80aakvgeiqin5a0c.xn--p1ai/rtut")

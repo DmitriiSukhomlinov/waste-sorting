@@ -57,18 +57,16 @@ Page {
             labelText: "Не принимается"
         }
 
-        Label {
+        Custom.WSNoClickTextButton {
             Layout.leftMargin: leftMargin
-            text: "<ul>
-                   <li>Посуда для готовки с покрытием (антипригарное и др.)</li>
-                   <li>Предметы из комбинированного материала (металл + дерево и др.)</li>
-                   <li>Стаканчики</li>
-                   <li>Мягкие упаковки</li>
-                   <li>Другое</li>
-                   </ul>"
-            font.pixelSize: 14
-            wrapMode: Text.WordWrap
             Layout.preferredWidth: page.width - leftMargin
+            labelText: "<ul>
+                       <li>Посуда для готовки с покрытием (антипригарное и др.)</li>
+                       <li>Предметы из комбинированного материала (металл + дерево и др.)</li>
+                       <li>Стаканчики</li>
+                       <li>Мягкие упаковки</li>
+                       <li>Другое</li>
+                       </ul>"
         }
     }
 }

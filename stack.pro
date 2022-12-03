@@ -1,4 +1,4 @@
-QT += quick webengine
+QT += quick
 android: QT += androidextras
 
 CONFIG += c++11

@@ -52,16 +52,14 @@ Page {
             labelText: "Не принимается"
         }
 
-        Label {
+        Custom.WSNoClickTextButton {
             Layout.leftMargin: leftMargin
-            text: "<ul>
-                   <li>Старые кинескопные мониторы и телевизоры</li>
-                   <li>Картриджи от принтера</li>
-                   <li>Пустые корпуса от техники</li>
-                   </ul>"
-            font.pixelSize: 14
-            wrapMode: Text.WordWrap
             Layout.preferredWidth: page.width - leftMargin
+            labelText: "<ul>
+                       <li>Старые кинескопные мониторы и телевизоры</li>
+                       <li>Картриджи от принтера</li>
+                       <li>Пустые корпуса от техники</li>
+                       </ul>"
         }
     }
 }

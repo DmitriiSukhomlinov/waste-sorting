@@ -55,7 +55,7 @@ Rectangle {
                 Text {
                     id: header
                     x: 10
-                    font.pixelSize: 18
+                    font.pixelSize: 54
                     font.bold: true
                     color: "#33cccc"
                     Component.onCompleted: function() {
@@ -65,6 +65,8 @@ Rectangle {
 
                 Image {
                     id: externalLink
+                    height: parent.height
+                    width: height
                     source: "../icons/chevron_right.png"
                 }
             }
@@ -72,8 +74,8 @@ Rectangle {
             Text {
                 id: label
                 x: 10
-                font.pixelSize: 14
-                wrapMode: Text.WordWrap
+                font.pixelSize: 42
+                wrapMode: Text.Wrap
                 width: container.parent.width - 70
             }
 

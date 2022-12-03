@@ -13,11 +13,12 @@ ApplicationWindow {
 
     header: ToolBar {
         Material.background: "#00d09f"
+        implicitHeight: 100//parent.height / 18
 
         ToolButton {
             id: toolButton
             text: stackView.depth > 1 ? "<" : ""
-            font.pixelSize: Qt.application.font.pixelSize * 1.6
+            font.pixelSize: parent.height * 0.9
             onClicked: {
                 if (stackView.depth > 1) {
                     stackView.pop()
@@ -29,6 +30,13 @@ ApplicationWindow {
             text: stackView.currentItem.title
             anchors.centerIn: parent
         }
+    }        
+
+    onClosing: {
+        if(stackView.depth > 1){
+            close.accepted = false
+            stackView.pop();
+        }
     }
 
     StackView {
@@ -38,8 +46,8 @@ ApplicationWindow {
             height: stackView.height
             width: stackView.width
             view: stackView
-            //mainStack: stackView
         }
+
 
         anchors.fill: parent
     }

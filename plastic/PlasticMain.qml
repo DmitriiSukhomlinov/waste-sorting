@@ -8,8 +8,6 @@ import ".."
 Page {
     property StackView view
 
-    property int picSize: 100
-
     height: view.height
     width: view.width
 
@@ -23,7 +21,7 @@ Page {
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic/1pete/icon.png"
             pressedImageSource: "../icons/plastic/1pete/icon.png"
-            pictureSize: picSize
+            pictureSize: parent.width * 0.3
             textBold: true
             otherImageOnClick: false
 
@@ -34,7 +32,7 @@ Page {
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic/2hdpe/icon.png"
             pressedImageSource: "../icons/plastic/2hdpe/icon.png"
-            pictureSize: picSize
+            pictureSize: parent.width * 0.3
             textBold: true
             otherImageOnClick: false
 
@@ -45,7 +43,7 @@ Page {
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic/3pvc/icon.png"
             pressedImageSource: "../icons/plastic/3pvc/icon.png"
-            pictureSize: picSize
+            pictureSize: parent.width * 0.3
             textBold: true
             otherImageOnClick: false
 
@@ -56,7 +54,7 @@ Page {
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic/4ldpe/icon.png"
             pressedImageSource: "../icons/plastic/4ldpe/icon.png"
-            pictureSize: picSize
+            pictureSize: parent.width * 0.3
             textBold: true
             otherImageOnClick: false
 
@@ -67,7 +65,7 @@ Page {
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic/5pp/icon.png"
             pressedImageSource: "../icons/plastic/5pp/icon.png"
-            pictureSize: picSize
+            pictureSize: parent.width * 0.3
             textBold: true
             otherImageOnClick: false
 
@@ -78,7 +76,7 @@ Page {
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic/6ps/icon.png"
             pressedImageSource: "../icons/plastic/6ps/icon.png"
-            pictureSize: picSize
+            pictureSize: parent.width * 0.3
             textBold: true
             otherImageOnClick: false
 
@@ -90,7 +88,7 @@ Page {
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic/7other/icon.png"
             pressedImageSource: "../icons/plastic/7other/icon.png"
-            pictureSize: picSize
+            pictureSize: parent.width * 0.3
             textBold: true
             otherImageOnClick: false
 
@@ -102,7 +100,7 @@ Page {
         Custom.WSPictureButton {
             releasedImageSource: "../icons/plastic/8extra/icon.png"
             pressedImageSource: "../icons/plastic/8extra/icon.png"
-            pictureSize: picSize
+            pictureSize: parent.width * 0.3
             textBold: true
             otherImageOnClick: false
 

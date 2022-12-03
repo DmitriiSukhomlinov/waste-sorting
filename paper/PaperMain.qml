@@ -14,7 +14,7 @@ Page {
     height: view.height
     width: view.width
 
-    title: "Стекло"
+    title: "Бумага"
 
     ColumnLayout {
         spacing: 0
@@ -27,6 +27,7 @@ Page {
 
         Custom.WSCategoryTextButton {
             Layout.topMargin: 10
+            Layout.preferredHeight: height
             width: page.width
             header: "Макулатура"
             text: "<ul>
@@ -48,11 +49,12 @@ Page {
         }
 
         Custom.WSCategoryTextButton {
+            Layout.preferredHeight: height
             width: page.width
             header: "Пульперкартон и втулки"
             text: "<ul>
                    <li>Упаковки от яиц</li>
-                   <li>Втулки от ткани, бумаги,<br>бумажных полотенец</li>
+                   <li>Втулки от ткани, бумаги, бумажных полотенец</li>
                    </ul>"
             onClicked: function() {
                 view.push("../prepare_page/how_2_prep.qml",
@@ -69,19 +71,17 @@ Page {
             labelText: "Не принимается"
         }
 
-        Label {
+        Custom.WSNoClickTextButton {
             Layout.leftMargin: leftMargin
-            text: "<ul>
-                   <li>Ламинированная бумага >(проверяется на надрыв)</li>
-                   <li>Чеки, калька, копирка, обои</li>
-                   <li>Подложки от яиц, тетрапаки</li>
-                   <li>\"Бумажные\" стаканчики</li>
-                   <li>Смывающиеся втулки от туалетной бумаги</li>
-                   <li>Отходы с маркировкой C/PAP</li>
-                   </ul>"
-            font.pixelSize: 14
-            wrapMode: Text.WordWrap
             Layout.preferredWidth: page.width - leftMargin
+            labelText: "<ul>
+                        <li>Ламинированная бумага (проверяется на надрыв)</li>
+                        <li>Чеки, калька, копирка, обои</li>
+                        <li>Подложки от яиц, тетрапаки</li>
+                        <li>\"Бумажные\" стаканчики</li>
+                        <li>Смывающиеся втулки от туалетной бумаги</li>
+                        <li>Отходы с маркировкой C/PAP</li>
+                        </ul>"
         }
     }
 }

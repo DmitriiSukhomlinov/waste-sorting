@@ -5,7 +5,6 @@ Label {
     property string labelText: ""
 
     text: labelText
-    font.pixelSize: 72
-    font.bold: true
-    color: "#098f86"
+    font.pixelSize: 42
+    wrapMode: Text.WordWrap
 }

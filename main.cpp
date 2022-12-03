@@ -1,9 +1,8 @@
-#include <QDebug>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQmlEngine>
-#include <QtWebEngine>
+//#include <QtWebEngine>
 
 #if defined(Q_OS_ANDROID)
 #include <QtAndroid>
@@ -18,11 +17,11 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
 #endif
 
+    //QtWebEngine::initialize();
+
     QGuiApplication app(argc, argv);
     app.setApplicationName("Waste sorting");
     app.setApplicationVersion("0.1");
-
-    QtWebEngine::initialize();
 
     QQmlApplicationEngine engine;
 

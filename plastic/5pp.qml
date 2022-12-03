@@ -88,16 +88,14 @@ Page {
             labelText: "Не принимается"
         }
 
-        Label {
+        Custom.WSNoClickTextButton {
             Layout.leftMargin: leftMargin
-            text: "<ul>
-                   <li>Отходы с маркировкой C/PP</li>
-                   <li>Флаконы от средств \"Чистая линия\"</li>
-                   <li>Фольгированные упаковки (с отражающими поверхностями)</li>
-                   </ul>"
-            font.pixelSize: 14
-            wrapMode: Text.WordWrap
             Layout.preferredWidth: page.width - leftMargin
+            labelText: "<ul>
+                       <li>Отходы с маркировкой C/PP</li>
+                       <li>Флаконы от средств \"Чистая линия\"</li>
+                       <li>Фольгированные упаковки (с отражающими поверхностями)</li>
+                       </ul>"
         }
     }
 }

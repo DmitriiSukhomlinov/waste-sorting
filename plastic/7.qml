@@ -25,13 +25,11 @@ Page {
             source: "../icons/plastic/7other/page-icon.png"
         }*/
 
-        Label {
-            Layout.topMargin: 10
+        Custom.WSNoClickTextButton {
+            Layout.topMargin: 20
             Layout.leftMargin: leftMargin
-            text: "Пластик с данной маркировкой не перерабатывается."
-            font.pixelSize: 14
-            wrapMode: Text.WordWrap
             Layout.preferredWidth: page.width - leftMargin
+            labelText: "Пластик с данной маркировкой не перерабатывается."
         }
     }
 }

@@ -44,7 +44,7 @@ Page {
                 view.push("../prepare_page/how_2_prep.qml",
                           {"view": view,
                            "pageTitle": header,
-                           "mapPrepareText": "Опустошить, этикетку не снимать, сжать, кидать без пакетов./nКрышки можно снять и сдать на переработку отдельно.",
+                           "mapPrepareText": "Опустошить, этикетку не снимать, сжать, кидать без пакетов. Крышки можно снять и сдать на переработку отдельно.",
                            "mapPrepareTextHeight": "70",
                            "ecoPrepareText": "Крышки снять и сложить отдельно, этикетки оставить, сжать, сложить в отдельный пакет (за дополнительную плату можно весь пластик сдать в одном пакете).",
                            "ecoPrepareTextHeight": "100",
@@ -62,18 +62,16 @@ Page {
             labelText: "Не принимается"
         }
 
-        Label {
+        Custom.WSNoClickTextButton {
             Layout.leftMargin: leftMargin
-            text: "<ul>
-                   <li>Отходы с маркировкой C/PET</li>
-                   <li>Контейнеры</li>
-                   <li>Стаканчики</li>
-                   <li>Мягкие упаковки</li>
-                   <li>Другое</li>
-                   </ul>"
-            font.pixelSize: 14
-            wrapMode: Text.WordWrap
             Layout.preferredWidth: page.width - leftMargin
+            labelText:"<ul>
+                       <li>Отходы с маркировкой C/PET</li>
+                       <li>Контейнеры</li>
+                       <li>Стаканчики</li>
+                       <li>Мягкие упаковки</li>
+                       <li>Другое</li>
+                       </ul>"
         }
     }
 }
